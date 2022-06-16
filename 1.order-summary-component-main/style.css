@@ -1,0 +1,162 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+
+@font-face {
+    font-family: "Red Hat";
+    src:url("/fonts/RedHatDisplay-VariableFont_wght.ttf");
+}
+
+*,*::after,*::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat";
+    font-size: 16px;
+    line-height: 26px;
+    background-color: rgb(220,229,253);
+    background-image:url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display:-ms-grid;
+    display:grid;
+    min-height:100vh;
+    place-items: center;
+    padding:20px;
+
+}
+
+.box-wrap {
+    margin:auto;
+    max-width:380px;
+}
+
+.box {
+    background-color:#fff;
+    border-radius: 20px;
+    padding:40px;
+    background-image:url("/images/illustration-hero.svg");
+    background-size:100%;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0 15px 20px rgba(102,103,230,.2);
+            box-shadow: 0 15px 20px rgba(102,103,230,.2);
+}
+
+.box-content {
+    padding-top:165px;
+}
+
+.box-plan {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    background-color:rgb(246,248,254);
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin: 15px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.box-plan-child {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    padding: 5px;
+}
+
+.box-plan-child-2 {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-flex:4;
+        -ms-flex-positive:4;
+            flex-grow:4;
+    padding: 0px 5px 5px 15px;
+}
+
+.box-plan-details {
+    display:block;
+    line-height: 5px;
+}
+
+h1 {
+    font-variation-settings: 'wght' 800;
+    font-size: 23px;
+    letter-spacing: 1px;
+    text-align: center;    
+}
+
+h4 {
+    font-variation-settings: 'wght' 750;
+    font-size: 14px;
+}
+
+p {
+    text-align:center;
+    color:rgb(117,123,141);
+}
+
+p.desc {
+    margin:auto;
+    padding:0px 15px;
+    font-size:15px;
+    line-height:22px;
+}
+
+p.price {
+    font-size:14px;
+    line-height:2px;
+}
+
+a.button {
+    background-color: rgb(39,50,211);
+    padding: 9px 20px;
+    border-radius: 10px;
+    color:#fff;
+    text-decoration: none;
+    display:block;
+    text-align:center;
+    font-variation-settings: 'wght' 700;
+    font-size: 13px;
+    -webkit-box-shadow: 0 15px 20px rgba(102,103,230,.35);
+            box-shadow: 0 15px 20px rgba(102,103,230,.35);
+    margin-bottom: 20px;
+}
+
+a.button:hover {
+    background-color: rgb(102,103,230);
+}
+
+a.change {
+    color:rgb(39,50,211);
+    font-variation-settings: 'wght' 680;
+    font-size:12px;
+}
+
+a.change:hover {
+    color:rgb(102,103,230);
+    text-decoration: none;
+}
+
+a.cancel {
+    color:rgb(117,123,141);
+    font-variation-settings: 'wght' 700;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a.cancel:hover {
+    color:#000;
+}
