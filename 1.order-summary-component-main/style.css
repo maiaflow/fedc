@@ -21,7 +21,7 @@ body {
     font-size: 16px;
     line-height: 26px;
     background-color: rgb(220,229,253);
-    background-image:url("/images/pattern-background-desktop.svg");
+    background-image:url("images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -42,7 +42,7 @@ body {
     background-color:#fff;
     border-radius: 20px;
     padding:40px;
-    background-image:url("/images/illustration-hero.svg");
+    background-image:url("images/illustration-hero.svg");
     background-size:100%;
     background-repeat: no-repeat;
     -webkit-box-shadow: 0 15px 20px rgba(102,103,230,.2);
