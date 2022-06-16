@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://maiaflow.github.io/fedc/1.order-summary-component-main/
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-order-summary-card-LpTS2rYbNT
+- Live Site URL: https://maiaflow.github.io/fedc/1.order-summary-component-main/
 
 ## My process
 
