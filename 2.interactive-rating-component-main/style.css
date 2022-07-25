@@ -76,6 +76,11 @@ button {
     display:block;
 }
 
+button:hover {
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
 #thankyou_state {
     background: rgb(31,37,45);
     background: radial-gradient(at top, rgba(31,37,45,1) 0%, rgba(23,25,28,1) 100%);
