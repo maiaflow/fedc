@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <script>
+  function myFunction() {
+      if (document.getElementById('rating_state')) {
+
+      if (document.getElementById('rating_state').style.display == 'none') {
+          document.getElementById('rating_state').style.display = 'block';
+          document.getElementById('thankyou_state').style.display = 'none';
+      }
+      else {
+          document.getElementById('rating_state').style.display = 'none';
+          document.getElementById('thankyou_state').style.display = 'block';
+      }
+    }
+    }
+</script>
+</head>
+<body>
+  <article>
+
+    <!-- Rating state start -->
+    <section id="rating_state">
+
+      <div id="star_icon">
+        <img src="images/icon-star.svg">
+      </div>
+      
+      <h1>How did we do?</h1>
+
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+
+      <div class="numbers">
+        <div class="number">
+          1
+        </div>  
+        <div class="number">
+          2
+        </div>  
+        <div class="number">
+          3
+        </div>  
+        <div class="number">
+          4
+        </div>  
+        <div class="number">
+          5
+        </div>
+      </div>
+      
+      <button id="submit" onclick="myFunction()">Submit</button>
+
+      </section>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <section id="thankyou_state">
+
+      <img src="/images/illustration-thank-you.svg" id="thankyou_img">
+
+      <div class="you_selected">
+        You selected <!-- Add rating here --> out of 5
+      </div>
+
+      <h1>Thank you!</h1>
+
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+
+    </section>
+    <!-- Thank you state end -->
+
+    <aside>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </aside>
+  </article>
+</body>
+</html>
