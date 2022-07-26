@@ -56,6 +56,7 @@ let ratingBank = "";
       }
       else {
           document.getElementById('rating').style.display = 'none';
+          results.innerHTML = ratingBank;
           document.getElementById('thankyou').style.display = 'block';
       }
     }
