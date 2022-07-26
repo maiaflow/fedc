@@ -10,33 +10,17 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 
-  <script>
-  function myFunction() {
-      if (document.getElementById('rating_state')) {
-
-      if (document.getElementById('rating_state').style.display == 'none') {
-          document.getElementById('rating_state').style.display = 'block';
-          document.getElementById('thankyou_state').style.display = 'none';
-      }
-      else {
-          document.getElementById('rating_state').style.display = 'none';
-          document.getElementById('thankyou_state').style.display = 'block';
-      }
-    }
-    }
-</script>
 </head>
 <body>
   <article>
 
     <!-- Rating state start -->
-    <section id="rating_state">
+    <section class="both_boxes" id="rating">
 
       <div id="star_icon">
         <img src="images/icon-star.svg">
@@ -48,19 +32,19 @@
       to help us improve our offering!
 
       <div class="numbers">
-        <div class="number">
+        <div class="number" id="one">
           1
         </div>  
-        <div class="number">
+        <div class="number" id="two">
           2
         </div>  
-        <div class="number">
+        <div class="number" id="three">
           3
         </div>  
-        <div class="number">
+        <div class="number" id="four">
           4
         </div>  
-        <div class="number">
+        <div class="number" id="five">
           5
         </div>
       </div>
@@ -71,9 +55,9 @@
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <section id="thankyou_state">
+    <section class="both_boxes" id="thankyou">
 
-      <img src="images/illustration-thank-you.svg" id="thankyou_img">
+      <img src="images/illustration-thank-you.svg">
 
       <div class="you_selected">
         You selected <!-- Add rating here --> out of 5
@@ -90,9 +74,74 @@
     <aside>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="#">maia</a>.
       </div>
     </aside>
   </article>
+
+  <script>
+  let ratingBank = "";
+  const ratingOne = document.querySelector("#one");
+  const ratingTwo = document.querySelector("#two");
+  const ratingThree = document.querySelector("#three");
+  const ratingFour = document.querySelector("#four");
+  const ratingFive = document.querySelector("#five");
+  const results = document.querySelector(".results");
+
+  ratingOne.addEventListener("click", () => {
+    ratingBank = 1;
+    ratingOne.classList.add("clicked");
+    ratingTwo.classList.remove("clicked");
+    ratingThree.classList.remove("clicked");
+    ratingFour.classList.remove("clicked");
+    ratingFive.classList.remove("clicked");
+  })
+  ratingTwo.addEventListener("click", () => {
+    ratingBank = 2;
+    ratingTwo.classList.add("clicked");
+    ratingOne.classList.remove("clicked");
+    ratingThree.classList.remove("clicked");
+    ratingFour.classList.remove("clicked");
+    ratingFive.classList.remove("clicked");
+  })
+  ratingThree.addEventListener("click", () => {
+    ratingBank = 3;
+    ratingThree.classList.add("clicked");
+    ratingOne.classList.remove("clicked");
+    ratingTwo.classList.remove("clicked");
+    ratingFour.classList.remove("clicked");
+    ratingFive.classList.remove("clicked");
+  })
+  ratingFour.addEventListener("click", () => {
+    ratingBank = 4;
+    ratingFour.classList.add("clicked");
+    ratingOne.classList.remove("clicked");
+    ratingTwo.classList.remove("clicked");
+    ratingThree.classList.remove("clicked");
+    ratingFive.classList.remove("clicked");
+  })
+  ratingFive.addEventListener("click", () => {
+    ratingBank = 5;
+    ratingFive.classList.add("clicked");
+    ratingOne.classList.remove("clicked");
+    ratingTwo.classList.remove("clicked");
+    ratingThree.classList.remove("clicked");
+    ratingFour.classList.remove("clicked");
+  })
+
+  function myFunction() {
+      if (document.getElementById('rating')) {
+
+      if (document.getElementById('rating').style.display == 'none') {
+          document.getElementById('rating').style.display = 'block';
+          document.getElementById('thankyou').style.display = 'none';
+      }
+      else {
+          document.getElementById('rating').style.display = 'none';
+          document.getElementById('thankyou').style.display = 'block';
+      }
+    }
+    }
+  </script>
 </body>
 </html>
