@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* || general styles */
 
 @font-face {
@@ -12,6 +19,7 @@ body {
     line-height: 25px;
     color: hsl(217, 12%, 63%);
     background-color: #141518;
+    display: -ms-grid;
     display: grid;
     min-height: 100vh;
     place-items: center;
@@ -25,11 +33,15 @@ h1 {
 
 .both_boxes {
     background: rgb(31,37,45);
+    background: -o-radial-gradient(at top, rgba(31,37,45,1) 0%, rgba(23,25,28,1) 100%);
     background: radial-gradient(at top, rgba(31,37,45,1) 0%, rgba(23,25,28,1) 100%);
     width: 350px;
     border-radius: 20px;
     padding: 40px;
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 /* || rating state */
 
@@ -39,6 +51,8 @@ h1 {
     border-radius: 50%;
     width: 15px;
     height: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -50,8 +64,12 @@ h1 {
 }
 
 .numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 20px 10px 35px;
 }
 
@@ -112,7 +130,22 @@ button:hover {
     background-color: hsl(213, 19%, 18%);
     border-radius: 20px;
     padding: 8px 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
     display: block;
+}.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
 }
