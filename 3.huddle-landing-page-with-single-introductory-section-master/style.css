@@ -12,12 +12,13 @@
 
 body {
     background-image: url(./images/bg-desktop.svg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: hsl(257, 40%, 49%);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #fff;
+    min-height: 100vh;
 }
 
 h1 {
