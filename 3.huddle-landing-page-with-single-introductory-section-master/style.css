@@ -40,6 +40,10 @@ button {
     display: block;
 }
 
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -50,3 +54,6 @@ button {
     font-size: 25px;
 }
 
+i:hover {
+    color: hsl(300, 69%, 71%);
+}
