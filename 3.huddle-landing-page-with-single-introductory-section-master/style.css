@@ -38,3 +38,7 @@ button {
     border: 0;
     display: block;
 }
+
+.flex {
+    display:flex;
+}
