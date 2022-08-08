@@ -41,6 +41,12 @@ button {
 }
 
 .flex {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
 }
+
+.icons {
+    float: right;
+    font-size: 25px;
+}
+
