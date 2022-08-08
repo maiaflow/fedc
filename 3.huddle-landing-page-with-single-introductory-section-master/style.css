@@ -32,8 +32,8 @@ button {
     font-weight: 400;
     color: hsl(257, 40%, 49%);
     background-color: #fff;
-    border-radius: 20px;
-    padding: 10px 45px;
+    border-radius: 30px;
+    padding: 15px 60px;
     box-shadow: 5px 5px 2px rgb(0,0,0,.2);
     margin: 20px;
     border: 0;
