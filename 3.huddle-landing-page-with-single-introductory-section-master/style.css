@@ -35,10 +35,12 @@ button {
     border-radius: 20px;
     padding: 10px 45px;
     box-shadow: 5px 5px 2px rgb(0,0,0,.2);
+    margin: 20px;
     border: 0;
     display: block;
 }
 
 .flex {
     display:flex;
+    flex-wrap: wrap;
 }
