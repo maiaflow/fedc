@@ -11,13 +11,16 @@
 }
 
 body {
+    background-image: url(./images/bg-desktop.svg);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    color: #fff;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    color: #fff;
 }
 
 button {
