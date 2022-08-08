@@ -32,5 +32,9 @@ button {
     font-weight: 400;
     color: hsl(257, 40%, 49%);
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: 10px 45px;
+    box-shadow: 5px 5px 2px rgb(0,0,0,.2);
+    border: 0;
+    display: block;
 }
