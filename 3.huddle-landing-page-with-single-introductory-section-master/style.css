@@ -3,8 +3,8 @@
 *,
 *::before,
 *::after {
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
-        box-sizing: border-box;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
@@ -30,7 +30,7 @@ img.logo {
 }
 
 img.mockup {
-    width: 700px;
+    width: 45vw;
 }
 
 h1 {
@@ -105,7 +105,7 @@ button:hover {
         float: none;
     }
     img.mockup {
-        width: 80%;
+        width: 75vw;
         margin: auto;
     }
     img.logo {
