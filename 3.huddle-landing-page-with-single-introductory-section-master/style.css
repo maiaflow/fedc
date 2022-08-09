@@ -25,7 +25,7 @@ body {
 }
 
 img.logo {
-    height: 54px;
+    width: 18vw;
     margin-bottom: 80px;
 }
 
@@ -65,7 +65,9 @@ button:hover {
 }
 
 .icons {
-    float: right;
+    position: fixed;
+    bottom: 3em;
+    right: 5em;
 }
 
 .icons, .icon {
@@ -102,14 +104,14 @@ button:hover {
     }
     .icons {
         margin-top: 80px;
-        float: none;
+        position: relative;
+        inset: 0;
     }
     img.mockup {
         width: 75vw;
         margin: auto;
     }
     img.logo {
-        width: 9em;
         margin-bottom: 20px;
     }
     h1 {
