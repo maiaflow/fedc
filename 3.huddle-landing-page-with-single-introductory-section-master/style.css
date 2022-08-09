@@ -92,8 +92,8 @@ button:hover {
 @media (max-width: 375px) {
     body {
         background-image: url(./images/bg-mobile.svg);
-        background-position: top;
-        margin: 3em 2em;
+        background-size: contain;
+        margin: 2em;
     }
     h1 {
         font-size: 26px;
@@ -117,7 +117,7 @@ button:hover {
         margin: auto;
     }
     .icons {
-        margin-top: 20px;
+        margin-top: 80px;
         float: none;
     }
     .icon {
