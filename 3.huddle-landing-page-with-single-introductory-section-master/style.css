@@ -89,41 +89,44 @@ button:hover {
     border: 1px solid hsl(300, 69%, 71%);
 }
 
-@media (max-width: 375px) {
-    body {
-        background-image: url(./images/bg-mobile.svg);
-        background-size: contain;
-        margin: 2em;
-    }
-    h1 {
-        font-size: 26px;
-        line-height: 30px;
-    }
+@media (max-width: 1145px) {
     .flex {
         flex-wrap: wrap;
         text-align: center;
+    }
+    button {
+        margin: auto;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    .icons {
+        margin-top: 80px;
+        float: none;
+    }
+    img.mockup {
+        width: 80%;
+        margin: auto;
     }
     img.logo {
         width: 9em;
         margin-bottom: 20px;
     }
-    img.mockup {
-        width: 16em;
+    h1 {
+        font-size: 26px;
+        line-height: 30px;
     }
-    p {
-        margin-bottom: 20px;
-    }
-    button {
-        margin: auto;
-    }
-    .icons {
-        margin-top: 80px;
-        float: none;
+}
+
+@media (max-width: 623px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-size: contain;
+        margin: 2em;
     }
     .icon {
         width: 33px;
         height: 33px;
         font-size: 1rem;
     }
-
 }
