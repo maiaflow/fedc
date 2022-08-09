@@ -69,8 +69,13 @@ button:hover {
     height: 50px;
 }
 
-
 .icon:hover {
     color: hsl(300, 69%, 71%);
     border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+    }
 }
