@@ -25,12 +25,12 @@ body {
 }
 
 img.logo {
-    width: 18vw;
+    width: 17vw;
     margin-bottom: 80px;
 }
 
 img.mockup {
-    width: 45vw;
+    width: 47vw;
 }
 
 h1 {
@@ -48,7 +48,7 @@ button {
     background-color: #fff;
     border-radius: 30px;
     padding: 15px 60px;
-    box-shadow: 5px 5px 2px rgb(0,0,0,.2);
+    box-shadow: 5px 5px 2px rgb(0,0,0,.1);
     margin: 20px 0px;
     border: 0;
     display: block;
@@ -94,6 +94,8 @@ button:hover {
 @media (max-width: 1145px) {
     .flex {
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
     button {
@@ -109,10 +111,10 @@ button:hover {
     }
     img.mockup {
         width: 75vw;
-        margin: auto;
     }
     img.logo {
-        margin-bottom: 20px;
+        width: 29vw;
+        margin-bottom: 40px;
     }
     h1 {
         font-size: 26px;
@@ -125,7 +127,19 @@ button:hover {
         background-image: url(./images/bg-mobile.svg);
         background-size: contain;
         margin: 2em;
+        font-size: 16px;
     }
+
+    h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 13px 74px;
+    }    
+
     .icon {
         width: 33px;
         height: 33px;
