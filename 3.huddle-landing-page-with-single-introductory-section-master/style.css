@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* || general styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
@@ -58,7 +65,8 @@ button {
     background-color: #fff;
     border-radius: 30px;
     padding: 15px 60px;
-    box-shadow: 5px 5px 2px rgb(0,0,0,.1);
+    -webkit-box-shadow: 5px 5px 2px rgb(0,0,0,.1);
+            box-shadow: 5px 5px 2px rgb(0,0,0,.1);
     margin: 20px 0px;
     border: 0;
     display: block;
@@ -71,8 +79,11 @@ button:hover {
 /* || flexbox */
 
 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     gap: 4vw;
 }
 
@@ -89,9 +100,15 @@ button:hover {
 }
 
 .icons, .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 17px;
 }
 
@@ -113,10 +130,15 @@ button:hover {
 
 @media (max-width: 1145px) {
     .flex {
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         text-align: center;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     button {
