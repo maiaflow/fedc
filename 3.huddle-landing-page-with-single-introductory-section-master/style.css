@@ -25,12 +25,12 @@ body {
 /* || svg images */
 
 img.logo {
-    width: 17vw;
+    width: 14vw;
     margin-bottom: 80px;
 }
 
 img.mockup {
-    width: 47vw;
+    width: 49vw;
 }
 
 /* || typography */
@@ -45,8 +45,8 @@ p {
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 36px;
-    line-height: 50px;
+    font-size: 38px;
+    line-height: 53px;
 }
 
 /* || buttons */
@@ -73,7 +73,11 @@ button:hover {
 .flex {
     display: flex;
     flex-wrap: nowrap;
-    gap: 40px;
+    gap: 4vw;
+}
+
+.flex_c2 {
+    margin: 2.5vw .5vw 0 0;
 }
 
 /* || icons */
@@ -111,27 +115,33 @@ button:hover {
     .flex {
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         text-align: center;
+        align-items: center;
     }
+
     button {
         margin: auto;
     }
+
     p {
         margin-bottom: 20px;
     }
+
     .icons {
         margin-top: 80px;
         position: relative;
         inset: 0;
     }
+
     img.mockup {
         width: 75vw;
     }
+
     img.logo {
         width: 29vw;
         margin-bottom: 40px;
     }
+
     h1 {
         font-size: 26px;
         line-height: 30px;
