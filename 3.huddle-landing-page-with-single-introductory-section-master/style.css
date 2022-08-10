@@ -1,3 +1,5 @@
+/* || general styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
 *,
@@ -15,14 +17,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: hsl(257, 40%, 49%);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
     color: #fff;
     min-height: 100vh;
     margin: 3em 5em;
 }
+
+/* || svg images */
 
 img.logo {
     width: 17vw;
@@ -33,13 +33,23 @@ img.mockup {
     width: 47vw;
 }
 
+/* || typography */
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 36px;
     line-height: 50px;
-    color: #fff;
 }
+
+/* || buttons */
 
 button {
     font-family: 'Poppins', sans-serif;
@@ -58,11 +68,15 @@ button:hover {
     background-color: hsl(300, 69%, 71%);
 }
 
+/* || flexbox */
+
 .flex {
     display: flex;
     flex-wrap: nowrap;
     gap: 40px;
 }
+
+/* || icons */
 
 .icons {
     position: fixed;
@@ -90,6 +104,8 @@ button:hover {
     color: hsl(300, 69%, 71%);
     border: 1px solid hsl(300, 69%, 71%);
 }
+
+/* || media - midrange */
 
 @media (max-width: 1145px) {
     .flex {
@@ -121,6 +137,8 @@ button:hover {
         line-height: 30px;
     }
 }
+
+/* || media - mobile */
 
 @media (max-width: 623px) {
     body {
