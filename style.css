@@ -3,10 +3,11 @@
     src: url(UnifrakturCook-Bold.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 
 body {
-    font-family: 'Pontano Sans', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
 }
 
 header {
@@ -21,11 +22,11 @@ section {
 
 article {
     position: fixed;
-    inset: 50vw;
+    inset: 20vh 40vw;
     width: 20vw;
     height: 20vw;
     background: linear-gradient(45deg,rgba(255, 255, 255, 0.5),rgba(219, 183, 183, 0.3)),linear-gradient(#e66456,#9198e5);
-    border-radius: 4em/15em;
+    border-radius: 5em/50em;
 }
 
 ::selection {
