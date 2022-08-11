@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
 @font-face {
     font-family: "UnifrakturCook";
     src: url(UnifrakturCook-Bold.ttf);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 
 body {
     font-family: 'Dosis', sans-serif;
