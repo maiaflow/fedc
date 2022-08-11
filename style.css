@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: linear-gradient(#e66456,#9198e5);
+    background: radial-gradient(#7fad36,#dd7ba1);
     color: #fff;
     height: 40vh;
 }
@@ -26,7 +26,7 @@ article {
     width: 20vw;
     height: 20vw;
     background: linear-gradient(45deg,rgba(255, 255, 255, 0.5),rgba(219, 183, 183, 0.3)),linear-gradient(#e66456,#9198e5);
-    border-radius: 5em/50em;
+    border-radius: 70em/50em;
 }
 
 ::selection {
@@ -34,18 +34,35 @@ article {
     background:#82514b;
   }
 
-a {
+h2 {
     font-family: 'UnifrakturCook', cursive;
     font-weight: 700;
     font-size: 6rem;
     background:linear-gradient(#e66456,#9198e5);
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;   
+}
+
+h2:hover {
+    background:linear-gradient(#9198e5,#e66456);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+a {
+    font-family: 'UnifrakturCook', cursive;
+    font-weight: 700;
+    font-size: 6rem;
+    background:linear-gradient(45deg,#d14333 20%,#e18721,#ede028,#7fad36,#9198e5 60%);
+    color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
 }
 
 a:hover {
-    background:linear-gradient(#9198e5,#e66456);
+    background:linear-gradient(#797b93,#efb5af);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
