@@ -28,6 +28,11 @@ article {
     border-radius: 4em/15em;
 }
 
+::selection {
+    color: white;
+    background:#82514b;
+  }
+
 a {
     font-family: 'UnifrakturCook', cursive;
     font-weight: 700;
