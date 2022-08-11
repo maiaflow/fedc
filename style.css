@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: radial-gradient(#7fad36,#dd7ba1);
+    background: radial-gradient(#7fad36,#7bafdd);
     color: #fff;
     height: 40vh;
 }
@@ -55,7 +55,7 @@ a {
     font-family: 'UnifrakturCook', cursive;
     font-weight: 700;
     font-size: 6rem;
-    background:linear-gradient(45deg,#d14333 20%,#e18721,#ede028,#7fad36,#9198e5 60%);
+    background:linear-gradient(45deg,#eb6b5c 20%,#e49b48,#ede028,#b1f348,#53b9d8,#84689f 70%);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -66,4 +66,22 @@ a:hover {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+button {
+    background: #000;
+    border: 0;
+    box-shadow: none;
+    color: #fff;
+    height: 5em;
+    width: 35em;
+    border-radius: 4em;
+}
+
+button:hover {
+    border-radius: 1em;
+}
+
+footer {
+    margin: 10vh;
 }
