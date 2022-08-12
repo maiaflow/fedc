@@ -8,6 +8,12 @@
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
+    --body-bg: #fff;
+    background-color: var(--body-bg);
+}
+
+body.dark {
+    --body-bg: rgb(83, 83, 83);
 }
 
 header {
@@ -74,7 +80,6 @@ button {
     box-shadow: none;
     color: #fff;
     height: 5em;
-    width: 35em;
     border-radius: 4em;
 }
 
