@@ -9,11 +9,14 @@ body {
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
     --body-bg: #fff;
+    --body-color: #000;
     background-color: var(--body-bg);
+    color: var(--body-color);
 }
 
 body.dark {
     --body-bg: rgb(83, 83, 83);
+    --body-color: #fff;
 }
 
 header {
