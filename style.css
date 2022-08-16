@@ -59,7 +59,7 @@ article {
     position: fixed;
     inset: 20vh 40vw;
     width: 20vw;
-    height: 20vw;
+    height: 10vw;
     background: linear-gradient(45deg,rgba(255, 255, 255, 0.5),rgba(219, 183, 183, 0.3)),linear-gradient(#e66456,#9198e5);
     border-radius: 70em/50em;
 }
