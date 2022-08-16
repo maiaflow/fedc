@@ -1,8 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;800&display=swap');
 
 @font-face {
     font-family: "UnifrakturCook";
     src: url(UnifrakturCook-Bold.ttf);
+}
+
+@keyframes wheelHueColor {
+    from, to { color: rgb(236,100,75); }
+    10%      { color: rgb(219,10,91); }
+    20%      { color: rgb(174,168,211); }
+    30%      { color: rgb(89,171,227); }
+    40%      { color: rgb(37,116,169); }
+    50%      { color: rgb(3,201,169); }
+    60%      { color: rgb(22,160,133); }
+    70%      { color: rgb(233,212,96); }
+    80%      { color: rgb(243,156,18); }
+    90%      { color: rgb(236,240,241); }
+}
+
+@keyframes wheelHueBgColor {
+    from, to { background-color: rgb(236, 89, 16);}
+    10%      { background-color: rgb(243,156,18);}
+    20%      { background-color: rgb(233,212,96); }
+    30%      { background-color: rgb(22,160,133); }
+    40%      { background-color: rgb(3,201,169); }
+    50%      { background-color: rgb(37,116,169);}
+    60%      { background-color: rgb(89,171,227);}
+    70%      { background-color: rgb(174,168,211); }
+    80%      { background-color: rgb(219,10,91); }
+    90%      { background-color: rgb(236,100,75); }
 }
 
 body {
@@ -41,7 +67,15 @@ article {
 ::selection {
     color: white;
     background:#82514b;
-  }
+}
+
+h1 {
+    color: rgb(236,100,75);
+    animation: wheelHueColor 20s infinite;
+    text-align: center;
+    font-size: 90px;
+    transform: translateY(-50%);
+}
 
 h2 {
     font-family: 'UnifrakturCook', cursive;
@@ -61,17 +95,28 @@ h2:hover {
 }
 
 a {
-    font-family: 'UnifrakturCook', cursive;
-    font-weight: 700;
-    font-size: 6rem;
-    background:linear-gradient(45deg,#eb6b5c 20%,#e49b48,#ede028,#b1f348,#53b9d8,#84689f 70%);
+    font-weight: 800;
+}
+
+a:hover {
+    background:linear-gradient(90deg,#ffbd4a,#ff75b5);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
 }
 
-a:hover {
-    background:linear-gradient(#797b93,#efb5af);
+a.funky {
+    font-family: 'UnifrakturCook', cursive;
+    font-weight: 700;
+    font-size: 6rem;
+    background:linear-gradient(45deg,#eb6b5c 20%,#e49b48,#ede028,#b1f348,#53b9d8,#966dbe 70%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+a.funky:hover {
+    background:linear-gradient(45deg,#966dbe 20%,#53b9d8,#b1f348,#ede028,#e49b48,#eb6b5c 70%);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -84,6 +129,13 @@ button {
     color: #fff;
     height: 5em;
     border-radius: 4em;
+    font-family: 'Dosis', sans-serif;
+}
+
+button.rainbow {
+    background-color: rgb(236,100,75);
+    animation: wheelHueBgColor 20s infinite;
+    width: 16em;
 }
 
 button:hover {
@@ -94,23 +146,3 @@ footer {
     margin: 10vh;
 }
 
-@keyframes wheelHueColor {
-    from, to { color: rgb(236,100,75); }
-    10%      { color: rgb(219,10,91); }
-    20%      { color: rgb(174,168,211); }
-    30%      { color: rgb(89,171,227); }
-    40%      { color: rgb(37,116,169); }
-    50%      { color: rgb(3,201,169); }
-    60%      { color: rgb(22,160,133); }
-    70%      { color: rgb(233,212,96); }
-    80%      { color: rgb(243,156,18); }
-    90%      { color: rgb(236,240,241); }
-}
-
-h1 {
-    color: rgb(236,100,75);
-    animation: wheelHueColor 20s infinite;
-    text-align: center;
-    font-size: 90px;
-    transform: translateY(-50%);
-}
