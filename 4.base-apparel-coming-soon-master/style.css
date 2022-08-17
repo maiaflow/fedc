@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
 :root {
     --desaturated-red: hsl(0, 36%, 70%);
     --soft-red: hsl(0, 93%, 68%);
@@ -13,8 +23,9 @@ body {
 
 h1 {
     text-transform: uppercase;
+    font-size: 72px;
     font-weight: 300;
-    letter-spacing: 6px;
+    letter-spacing: 15px;
     color: var(--desaturated-red);
 }
 
@@ -26,25 +37,63 @@ h1 span {
 p {
     font-size: 16px;
     font-weight: 400;
+    line-height: 2;
     color: var(--desaturated-red);
+    margin-bottom: 50px;
 }
 
 input {
     border: 1px solid var(--desaturated-red);
-    border-radius: 20px;
+    border-radius: 30px;
     background: transparent;
     color: var(--desaturated-red);
-    padding: 10px;
+    vertical-align: center;
+    width: 320px;
+    height: 60px;
+    padding: 17px 0px 15px 30px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--dark-grayish-red);
+}
+
+input::placeholder {
+    color: var(--desaturated-red);
 }
 
 button {
     border: 0;
     border-radius: 30px;
     background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
-    padding: 10px 25px;
-    margin-left: -30px;
+    padding: 15px 40px;
+    margin-left: -60px;
+    height: 65px;
 }
 
 button:hover {
-    background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    background: linear-gradient(135deg,hsla(0, 0%, 100%,.5),hsla(0, 100%, 98%,.5)),linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header {
+    margin: 60px 140px;
+}
+
+section {
+    width: 55vw;
+    padding: 0px 140px;
+}
+
+aside {
+    background: no-repeat url("./images/hero-desktop.jpg");
+    background-size: cover;
+    flex-basis: 100vh;
+    width: 45vw;
 }
