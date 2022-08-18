@@ -50,7 +50,7 @@ input {
     vertical-align: center;
     width: 25vw;
     height: 60px;
-    padding: 17px 0px 15px 30px;
+    padding: 20px 30px;
 }
 
 input:focus {
@@ -67,7 +67,8 @@ button {
     border-radius: 30px;
     background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
     margin-left: -60px;
-    height: 65px;
+    height: 60px;
+    line-height: 60px;
     width: 7vw;
 }
 
@@ -100,24 +101,32 @@ aside {
 
 @media (max-width: 979px) {
     header {
-        margin: 0px;
+        margin: 50px;
     }
     
     section {
-        padding: 0px;
+        padding: 50px;
     }
 
+    input {
+        width: 40vw;
+    }
+
+    button {
+        width: 10vw;
+    }
 }
 
 @media (max-width: 777px) {
     header {
-        margin: 0px;
+        margin: 50px;
         order: 1;
     }
     
     section {
         width: 100vw;
         height: 40vh;
+        padding: 50px;
         order: 3;
     }
 
@@ -126,15 +135,50 @@ aside {
         order: 2;
         width: 100vw;
         flex-basis: 40vw;
-        background: no-repeat url("./images/hero-mobile.jpg");
-        background-size: 100%;
+        padding: 140px 0px;
     }
 
     h1 {
         text-align:center;
+        font-size: 3rem;
+    }
+
+    p {
+        text-align: center;
     }
 
     input {
-        width: 80vw;
+        width: 70vw;
+        margin-bottom: 100px;
+    }
+
+    button {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 375px) {
+
+    header {
+        margin: 30px;
+    }
+
+    aside {
+        background: no-repeat url("./images/hero-mobile.jpg");
+        background-size: 100%;
+        padding: 150px 0px;
+    }
+
+    section {
+        padding: 0px 40px 40px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.9;
     }
 }
