@@ -18,7 +18,7 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background: url("./images/bg-pattern-desktop.svg");
+    background: url(./images/bg-pattern-desktop.svg);
 }
 
 h1 {
@@ -46,7 +46,7 @@ input {
     border: 1px solid var(--desaturated-red);
     border-radius: 30px;
     background: transparent;
-    color: var(--desaturated-red);
+    color: var(--dark-grayish-red);
     vertical-align: center;
     width: 25vw;
     height: 60px;
@@ -61,6 +61,14 @@ input:focus {
 input::placeholder {
     color: var(--desaturated-red);
 }
+
+input:not(:placeholder-shown):not(:focus):invalid {
+    border: 2px solid red;
+    background: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 78%;
+}
+
 
 button {
     border: 0;
