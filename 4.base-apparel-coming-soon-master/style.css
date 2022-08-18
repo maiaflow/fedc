@@ -48,7 +48,7 @@ input {
     background: transparent;
     color: var(--desaturated-red);
     vertical-align: center;
-    width: 320px;
+    width: 25vw;
     height: 60px;
     padding: 17px 0px 15px 30px;
 }
@@ -66,9 +66,9 @@ button {
     border: 0;
     border-radius: 30px;
     background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
-    padding: 15px 40px;
     margin-left: -60px;
     height: 65px;
+    width: 7vw;
 }
 
 button:hover {
@@ -96,4 +96,45 @@ aside {
     background-size: cover;
     flex-basis: 100vh;
     width: 45vw;
+}
+
+@media (max-width: 979px) {
+    header {
+        margin: 0px;
+    }
+    
+    section {
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 777px) {
+    header {
+        margin: 0px;
+        order: 1;
+    }
+    
+    section {
+        width: 100vw;
+        height: 40vh;
+        order: 3;
+    }
+
+    aside {
+        flex-basis: auto;
+        order: 2;
+        width: 100vw;
+        flex-basis: 40vw;
+        background: no-repeat url("./images/hero-mobile.jpg");
+        background-size: 100%;
+    }
+
+    h1 {
+        text-align:center;
+    }
+
+    input {
+        width: 80vw;
+    }
 }
