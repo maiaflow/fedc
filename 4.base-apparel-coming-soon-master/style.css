@@ -1,3 +1,5 @@
+/* || general */
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
 *,
@@ -18,13 +20,15 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background: url(./images/bg-pattern-desktop.svg);
-    background-size: contain;
+    background: linear-gradient(hsla(0, 100%, 98%, .3) 50%,hsla(0, 36%, 70%, .2),hsla(0, 100%, 98%, .3)), no-repeat url(./images/bg-pattern-desktop.svg);
+    background-size: auto 100vh;
 }
+
+/* || typography */
 
 h1 {
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 4em;
     font-weight: 300;
     letter-spacing: 15px;
     color: var(--desaturated-red);
@@ -38,19 +42,21 @@ h1 span {
 p {
     font-size: 16px;
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.7;
     color: var(--desaturated-red);
-    margin-bottom: 50px;
+    margin: -3vh 2vw 5vh 0px;
 }
 
+/* || form */
+
 input {
-    border: 1px solid var(--desaturated-red);
+    border: 1px solid hsla(0, 36%, 70%, .5);
     border-radius: 30px;
     background: transparent;
     color: var(--dark-grayish-red);
     vertical-align: center;
-    width: 25vw;
-    height: 60px;
+    width: 28vw;
+    height: 55px;
     padding: 20px 30px;
 }
 
@@ -61,7 +67,7 @@ input:focus {
 }
 
 input::placeholder {
-    color: var(--desaturated-red);
+    color: hsla(0, 36%, 70%, .5);
 }
 
 input:not(:placeholder-shown):not(:focus):invalid {
@@ -76,15 +82,17 @@ button {
     border-radius: 30px;
     background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
     margin-left: -60px;
-    height: 60px;
-    line-height: 60px;
+    height: 55px;
+    line-height: 55px;
     width: 7vw;
 }
 
 button:hover {
     background: linear-gradient(135deg,hsla(0, 0%, 100%,.5),hsla(0, 100%, 98%,.5)),linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
-    box-shadow: 2px 10px 10px rgba(0,0,0,0.2);
+    box-shadow: 2px 10px 10px hsla(0, 36%, 70%,.4);
 }
+
+/* || flex */
 
 .container {
     height: 100vh;
@@ -94,21 +102,23 @@ button:hover {
 }
 
 header {
-    margin: 60px 140px;
+    margin: 8vh 11.5vw 9vh;
 }
 
 section {
-    width: 55vw;
-    height:50vh;
-    padding: 0px 140px;
+    width: 57vw;
+    height: 50vh;
+    padding: 0px 11.5vw;
 }
 
 aside {
     background: no-repeat url("./images/hero-desktop.jpg");
     background-size: cover;
     flex-basis: 100vh;
-    width: 45vw;
+    width: 43vw;
 }
+
+/* || media queries */
 
 @media (max-width: 1004px) {
     header {
@@ -129,6 +139,8 @@ aside {
 }
 
 @media (max-width: 777px) {
+
+
     header {
         margin: 50px;
         order: 1;
