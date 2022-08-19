@@ -122,11 +122,11 @@ aside {
 
 @media (max-width: 1004px) {
     header {
-        margin: 50px;
+        margin: 7vw;
     }
     
     section {
-        padding: 50px;
+        padding: 7vw;
     }
 
     input {
@@ -139,17 +139,15 @@ aside {
 }
 
 @media (max-width: 777px) {
-
-
     header {
-        margin: 50px;
+        margin: 5vw;
         order: 1;
     }
     
     section {
         width: 100vw;
         height: 40vh;
-        padding: 50px;
+        padding: 2vh 15vw;
         order: 3;
     }
 
@@ -171,7 +169,7 @@ aside {
     }
 
     input {
-        width: 70vw;
+        width: 60vw;
         margin-bottom: 100px;
     }
 
@@ -181,27 +179,44 @@ aside {
 }
 
 @media (max-width: 375px) {
+    body {
+        background: linear-gradient(hsla(0, 100%, 98%, .3) 50%,hsla(0, 36%, 70%, .2),hsla(0, 100%, 98%, .3));
+    }
 
     header {
-        margin: 30px;
+        margin: 5vh 7vw;
     }
+
+    header img {
+        width: 100px;
+    }    
 
     aside {
         background: no-repeat url("./images/hero-mobile.jpg");
         background-size: 100%;
-        padding: 150px 0px;
+        padding: 140px 0px;
     }
 
     section {
-        padding: 0px 40px 40px;
+        padding: 0px 30px 30px;
     }
 
     h1 {
         font-size: 2.5rem;
+        letter-spacing: 12px;
     }
 
     p {
         font-size: 14px;
         line-height: 1.9;
+        margin: 0px 0px 25px 0px;
+    }
+
+    input {
+        width: 75vw;
+    }
+
+    button {
+        width: 19vw;
     }
 }
