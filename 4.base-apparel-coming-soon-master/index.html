@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="style.css">
 
+  <script src="script.js"></script>
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,7 +30,8 @@
     Add your email below to stay up-to-date with announcements and our launch deals.
     </p>
 
-    <form action="" method="post">
+    <form novalidate method="get">
+      <span class="error"></span>
       <input type="email" id="mail" name="user_email" placeholder="Email Address" required>
       <button type="submit"><img src="./images/icon-arrow.svg" alt="arrow"></button>
     </form>

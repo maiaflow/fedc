@@ -77,6 +77,17 @@ input:not(:placeholder-shown):not(:focus):invalid {
     background-position: 78%;
 }
 
+span.error::after {
+    content: "Please provide a valid email";
+    display:block;
+    position: relative;
+    top: 80px;
+    left: 30px;
+    font-size: .8em;
+    color: var(--soft-red);
+    display: none;
+}
+
 button {
     border: 0;
     border-radius: 30px;
