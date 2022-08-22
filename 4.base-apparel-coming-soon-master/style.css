@@ -21,7 +21,7 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     background: linear-gradient(hsla(0, 100%, 98%, .3) 50%,hsla(0, 36%, 70%, .2),hsla(0, 100%, 98%, .3)), no-repeat url(./images/bg-pattern-desktop.svg);
-    background-size: auto 100vh;
+    background-size: 57vw 100vh;
 }
 
 /* || typography */
@@ -150,6 +150,10 @@ aside {
 }
 
 @media (max-width: 777px) {
+    body {
+        background-size: auto 100vh;
+    }
+
     header {
         margin: 5vw;
         order: 1;
