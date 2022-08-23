@@ -129,7 +129,8 @@ button {
     box-shadow: none;
     --button-color: #000;
     color: var(--button-color);
-    height: 5em;
+    height: 3em;
+    width: 3em;
     border-radius: 4em;
     font-family: 'Dosis', sans-serif;
 }
@@ -143,6 +144,7 @@ button.rainbow {
     background-color: rgb(236,100,75);
     animation: wheelHueBgColor 20s infinite;
     width: 16em;
+    height: 5em;
 }
 
 button:hover {
