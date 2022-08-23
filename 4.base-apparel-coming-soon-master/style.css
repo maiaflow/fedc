@@ -77,7 +77,7 @@ input:not(:placeholder-shown):not(:focus):invalid {
     background-position: 78%;
 }
 
-span.error::after {
+span.error {
     content: "Please provide a valid email";
     display:block;
     position: relative;
@@ -101,6 +101,10 @@ button {
 button:hover {
     background: linear-gradient(135deg,hsla(0, 0%, 100%,.5),hsla(0, 100%, 98%,.5)),linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
     box-shadow: 2px 10px 10px hsla(0, 36%, 70%,.4);
+}
+
+button img {
+    vertical-align: sub;
 }
 
 /* || flex */
