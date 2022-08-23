@@ -41,7 +41,7 @@ body {
 }
 
 body.dark {
-    --body-bg: rgb(83, 83, 83);
+    --body-bg: rgb(32, 32, 32);
     --body-color: #fff;
 }
 
@@ -123,13 +123,20 @@ a.funky:hover {
 }
 
 button {
-    background: #000;
+    --button-bg: #fff;
+    background-color: var(--button-bg);
     border: 0;
     box-shadow: none;
-    color: #fff;
+    --button-color: #000;
+    color: var(--button-color);
     height: 5em;
     border-radius: 4em;
     font-family: 'Dosis', sans-serif;
+}
+
+body.dark button {
+    --button-bg: #000;
+    --button-color: #fff;
 }
 
 button.rainbow {
