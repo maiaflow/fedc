@@ -49,6 +49,15 @@ p {
 
 /* || form */
 
+span.error {
+    display: none;
+    position: relative;
+    top: 9px;
+    left: 30px;
+    font-size: .8em;
+    color: var(--soft-red);
+}
+
 input {
     border: 1px solid hsla(0, 36%, 70%, .5);
     border-radius: 30px;
@@ -57,6 +66,7 @@ input {
     vertical-align: center;
     width: 28vw;
     height: 55px;
+    line-height: 55px;
     padding: 20px 30px;
 }
 
@@ -75,17 +85,6 @@ input:not(:placeholder-shown):not(:focus):invalid {
     background: url(./images/icon-error.svg);
     background-repeat: no-repeat;
     background-position: 78%;
-}
-
-span.error {
-    content: "Please provide a valid email";
-    display:block;
-    position: relative;
-    top: 80px;
-    left: 30px;
-    font-size: .8em;
-    color: var(--soft-red);
-    display: none;
 }
 
 button {
