@@ -82,6 +82,12 @@ const proudOfThisFunc = () => {
 }
 ```
 
+```css
+button img {
+    vertical-align: sub;
+}
+```
+
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 **Note: Delete this note and the content within this section and replace with your own learnings.**
