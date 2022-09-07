@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* || general */
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
@@ -20,6 +27,8 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    background: -webkit-gradient(linear,left top, left bottom,color-stop(50%, hsla(0, 100%, 98%, .3)),color-stop(hsla(0, 36%, 70%, .2)),to(hsla(0, 100%, 98%, .3))), no-repeat url(./images/bg-pattern-desktop.svg);
+    background: -o-linear-gradient(hsla(0, 100%, 98%, .3) 50%,hsla(0, 36%, 70%, .2),hsla(0, 100%, 98%, .3)), no-repeat url(./images/bg-pattern-desktop.svg);
     background: linear-gradient(hsla(0, 100%, 98%, .3) 50%,hsla(0, 36%, 70%, .2),hsla(0, 100%, 98%, .3)), no-repeat url(./images/bg-pattern-desktop.svg);
     background-size: 57vw 100vh;
 }
@@ -76,8 +85,38 @@ input:focus {
     background-color: hsla(0, 33%, 70%,.1);
 }
 
+input::-webkit-input-placeholder {
+    color: hsla(0, 36%, 70%, .5);
+}
+
+input::-moz-placeholder {
+    color: hsla(0, 36%, 70%, .5);
+}
+
+input:-ms-input-placeholder {
+    color: hsla(0, 36%, 70%, .5);
+}
+
+input::-ms-input-placeholder {
+    color: hsla(0, 36%, 70%, .5);
+}
+
 input::placeholder {
     color: hsla(0, 36%, 70%, .5);
+}
+
+input:not(:-moz-placeholder-shown):not(:focus):invalid {
+    border: 2px solid var(--soft-red);
+    background: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 78%;
+}
+
+input:not(:-ms-input-placeholder):not(:focus):invalid {
+    border: 2px solid var(--soft-red);
+    background: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 78%;
 }
 
 input:not(:placeholder-shown):not(:focus):invalid {
@@ -90,6 +129,7 @@ input:not(:placeholder-shown):not(:focus):invalid {
 button {
     border: 0;
     border-radius: 30px;
+    background: -o-linear-gradient(315deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
     background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
     margin-left: -60px;
     height: 55px;
@@ -98,8 +138,10 @@ button {
 }
 
 button:hover {
+    background: -o-linear-gradient(315deg,hsla(0, 0%, 100%,.5),hsla(0, 100%, 98%,.5)),-o-linear-gradient(315deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
     background: linear-gradient(135deg,hsla(0, 0%, 100%,.5),hsla(0, 100%, 98%,.5)),linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
-    box-shadow: 2px 10px 10px hsla(0, 36%, 70%,.4);
+    -webkit-box-shadow: 2px 10px 10px hsla(0, 36%, 70%,.4);
+            box-shadow: 2px 10px 10px hsla(0, 36%, 70%,.4);
 }
 
 button img {
@@ -110,9 +152,15 @@ button img {
 
 .container {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 header {
@@ -128,7 +176,8 @@ section {
 aside {
     background: no-repeat url("./images/hero-desktop.jpg");
     background-size: cover;
-    flex-basis: 100vh;
+    -ms-flex-preferred-size: 100vh;
+        flex-basis: 100vh;
     width: 43vw;
 }
 
@@ -159,21 +208,29 @@ aside {
 
     header {
         margin: 5vw;
-        order: 1;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
     }
     
     section {
         width: 100vw;
         height: 40vh;
         padding: 2vh 15vw;
-        order: 3;
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
     }
 
     aside {
-        flex-basis: auto;
-        order: 2;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
         width: 100vw;
-        flex-basis: 40vw;
+        -ms-flex-preferred-size: 40vw;
+            flex-basis: 40vw;
         padding: 140px 0px;
     }
 
@@ -194,10 +251,20 @@ aside {
     button {
         width: 15vw;
     }
+
+    span.error {
+    display: block;
+    position: relative;
+    top: -80px;
+    left: 30px;
+    }
+
 }
 
 @media (max-width: 375px) {
     body {
+        background: -webkit-gradient(linear,left top, left bottom,color-stop(50%, hsla(0, 100%, 98%, .3)),color-stop(hsla(0, 36%, 70%, .2)),to(hsla(0, 100%, 98%, .3)));
+        background: -o-linear-gradient(hsla(0, 100%, 98%, .3) 50%,hsla(0, 36%, 70%, .2),hsla(0, 100%, 98%, .3));
         background: linear-gradient(hsla(0, 100%, 98%, .3) 50%,hsla(0, 36%, 70%, .2),hsla(0, 100%, 98%, .3));
     }
 
