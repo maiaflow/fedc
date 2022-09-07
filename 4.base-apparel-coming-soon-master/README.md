@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/coming-soon-page-using-flexbox-and-built-in-validation-OcWjIS-An6](https://www.frontendmentor.io/solutions/coming-soon-page-using-flexbox-and-built-in-validation-OcWjIS-An6)
 - Live Site URL: [https://maiaflow.github.io/fedc/4.base-apparel-coming-soon-master/](https://maiaflow.github.io/fedc/4.base-apparel-coming-soon-master/)
 
 ## My process
