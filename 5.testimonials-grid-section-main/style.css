@@ -4,12 +4,15 @@ body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 500;
     font-size: 13px;
-    line-height: 1.5;
+    line-height: 1.3;
     background: hsl(210, 46%, 95%);
 }
 
 main {
     display: grid;
+    width: 77vw;
+    margin: 24vh auto;
+    gap: 20px 30px;
 }
 
 figure {
@@ -23,12 +26,12 @@ figure img {
     margin: 0px 15px 0px 0px;
     border-width: 2px;
     border-style: solid;
-    width: 40px;
+    width: 28px;
     height: auto;
 }
 
-figcaption header {
-    font-size: 16px;
+figcaption footer {
+    font-size: 11px;
 }
 
 figcaption footer {
@@ -36,14 +39,14 @@ figcaption footer {
 }
 
 article {
-    border-radius: 7px;
-    padding: 20px 30px;
-    margin: 15px;
+    border-radius: 8px;
+    padding: 12px 30px 17px;
+    box-shadow: 45px 70px 20px -30px hsla(219, 10%, 73%, .2);
 }
 
 article:nth-child(6n+1) {
     background: hsl(263, 55%, 52%) url(./images/bg-pattern-quotation.svg) no-repeat;
-    background-position: top right;
+    background-position: top right 80px;
     color: hsl(0, 0%, 100%);
 }
 
@@ -57,7 +60,7 @@ article:nth-child(6n+2) {
 }
 
 article:nth-child(6n+2) img {
-    border-color: hsla(0, 0%, 100%, .5);
+    border-color: hsla(0, 0%, 100%, .2);
 }
 
 article:nth-child(6n+4) {
@@ -81,19 +84,23 @@ article:nth-child(2n+3) img {
 mark {
     background-color: transparent;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 19px;
+    letter-spacing: .5px;
     display: block;
     color: inherit;
+    margin-top: 3px;
+    margin-bottom: 18px;
 }
 
 p {
     opacity: 70%;
+    line-height: 1.4;
 }
 
 @media (min-width:720px) {
     main {
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 1fr 1fr;
+        grid-template-rows: auto;
     }
 }
 
