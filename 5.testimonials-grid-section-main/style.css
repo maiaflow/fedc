@@ -4,7 +4,12 @@ body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 500;
     font-size: 13px;
+    line-height: 1.5;
     background: hsl(210, 46%, 95%);
+}
+
+main {
+    display: grid;
 }
 
 figure {
@@ -16,7 +21,7 @@ figure {
 figure img {
     border-radius: 30px;
     margin: 0px 15px 0px 0px;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     width: 40px;
     height: auto;
@@ -32,18 +37,18 @@ figcaption footer {
 
 article {
     border-radius: 7px;
-    padding: 20px;
-    margin: 20px;
+    padding: 20px 30px;
+    margin: 15px;
 }
 
 article:nth-child(6n+1) {
     background: hsl(263, 55%, 52%) url(./images/bg-pattern-quotation.svg) no-repeat;
-    background-position: right;
+    background-position: top right;
     color: hsl(0, 0%, 100%);
 }
 
 article:nth-child(6n+1) img {
-    border-color: hsla(0, 0%, 100%, .5);
+    border-color: hsla(0, 0%, 100%, .3);
 }
 
 article:nth-child(6n+2) {
@@ -83,4 +88,16 @@ mark {
 
 p {
     opacity: 70%;
+}
+
+@media (min-width:720px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1300px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
 }
