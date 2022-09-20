@@ -92,11 +92,12 @@ p {
 
 @media (min-width:720px) {
     main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr 1fr;
     }
 }
 
-@media (min-width:1300px) {
+@media (min-width:1120px) {
     main {
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 1fr 1fr;
