@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub/testimonials-section-with-css-grid-CKIa-L1gGN](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub/testimonials-section-with-css-grid-CKIa-L1gGN)
+- Solution URL: [https://www.frontendmentor.io/solutions/testimonials-section-with-css-grid-CKIa-L1gGN](https://www.frontendmentor.io/solutions/testimonials-section-with-css-grid-CKIa-L1gGN)
 - Live Site URL: [https://maiaflow.github.io/fedc/5.testimonials-grid-section-main/](https://maiaflow.github.io/fedc/5.testimonials-grid-section-main/)
 
 ## My process
