@@ -31,6 +31,16 @@
     90%      { background-color: rgb(236,100,75); }
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
@@ -45,23 +55,75 @@ body.dark {
     --body-color: #fff;
 }
 
-header {
-    background: radial-gradient(#7fad36,#7bafdd);
-    color: #fff;
-    height: 40vh;
+marquee {
+    color: #000;
+    font-style: italic;
 }
 
-section {
-    margin-top: -8vh;
+body.dark marquee {
+    color: #fff;
+}
+
+header {
+    /* background: radial-gradient(#7fad36,#7bafdd); */
+    color: #fff;
+}
+
+main {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+section.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+section h1 {
+    margin: 0;
+}
+
+section.left {
+    display:flex;
+}
+
+section.right {
+    display: flex;
+}
+
+section.articles {
+    display: grid;
 }
 
 article {
-    position: fixed;
-    inset: 20vh 40vw;
-    width: 20vw;
-    height: 10vw;
+    --article-bg: rgb(249, 242, 232);
+    --article-color: #000;
+    background-color: var(--article-bg);
+    color: var(--article-color);
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 1em;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+article section {
+    display:flex;
+}
+
+body.dark article {
+    --article-bg: rgb(26, 25, 25);
+    --article-color: bisque;
+}
+
+aside {
+    width: 16em;
+    height: 16em;
     background: linear-gradient(45deg,rgba(255, 255, 255, 0.5),rgba(219, 183, 183, 0.3)),linear-gradient(#e66456,#9198e5);
-    border-radius: 70em/50em;
+    border-radius: 50%;
+    padding: 5em;
 }
 
 ::selection {
@@ -72,15 +134,14 @@ article {
 h1 {
     color: rgb(236,100,75);
     animation: wheelHueColor 20s infinite;
-    text-align: center;
     font-size: 90px;
-    transform: translateY(-50%);
 }
 
 h2 {
     font-family: 'UnifrakturCook', cursive;
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 5rem;
+    letter-spacing: .4rem;
     background:linear-gradient(#e66456,#9198e5);
     color: transparent;
     background-clip: text;
@@ -105,17 +166,17 @@ a:hover {
     -webkit-background-clip: text;
 }
 
-a.funky {
+article section:nth-of-type(1) a {
     font-family: 'UnifrakturCook', cursive;
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 4rem;
     background:linear-gradient(45deg,#eb6b5c 20%,#e49b48,#ede028,#b1f348,#53b9d8,#966dbe 70%);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
 }
 
-a.funky:hover {
+article a:hover {
     background:linear-gradient(45deg,#966dbe 20%,#53b9d8,#b1f348,#ede028,#e49b48,#eb6b5c 70%);
     color: transparent;
     background-clip: text;
@@ -123,7 +184,7 @@ a.funky:hover {
 }
 
 button {
-    --button-bg: #fff;
+    --button-bg: #ffff00;
     background-color: var(--button-bg);
     border: 0;
     box-shadow: none;
@@ -131,8 +192,9 @@ button {
     color: var(--button-color);
     height: 3em;
     width: 3em;
-    border-radius: 4em;
+    border-radius: 40em/50em;
     font-family: 'Dosis', sans-serif;
+    margin: 1em;
 }
 
 body.dark button {
@@ -144,7 +206,7 @@ button.rainbow {
     background-color: rgb(236,100,75);
     animation: wheelHueBgColor 20s infinite;
     width: 16em;
-    height: 5em;
+    height: 3.5em;
 }
 
 button:hover {
