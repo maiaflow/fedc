@@ -24,6 +24,7 @@ main {
     max-width: 284px;
     margin: 19vh auto;
     text-align: center;
+    box-shadow: 10px 20px 20px 15px hsla(220, 15%, 55%, .1);
 }
 
 article {
