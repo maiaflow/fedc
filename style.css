@@ -59,6 +59,11 @@ body.dark {
     --body-color: #fff;
 }
 
+body.light {
+    --body-bg: #fff;
+    --body-color: #000;
+}
+
 /*typography*/
 
 marquee {
@@ -78,7 +83,8 @@ body.dark marquee {
 h1 {
     color: rgb(236,100,75);
     animation: wheelHueColor 20s infinite;
-    font-size: 90px;
+    font-size: 6rem;
+    line-height: 5rem;
 }
 
 h2 {
@@ -97,6 +103,10 @@ h2:hover {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+section.top p {
+    margin-top: 1em;
 }
 
 a {
@@ -203,12 +213,8 @@ footer {
 /*buttons*/
 
 button {
-    --button-bg: #fafaad;
-    background-color: var(--button-bg);
     border: 0;
     box-shadow: none;
-    --button-color: #000;
-    color: var(--button-color);
     height: 3em;
     width: 3em;
     border-radius: 50%;
@@ -216,7 +222,14 @@ button {
     margin: 1em;
 }
 
-body.dark button {
+button#toggle {
+    --button-bg: #fafaad;
+    background-color: var(--button-bg);
+    --button-color: #000;
+    color: var(--button-color);
+}
+
+body.dark button#toggle {
     --button-bg: #000;
     --button-color: #fff;
 }
@@ -231,4 +244,57 @@ button.rainbow {
 
 button:hover {
     border-radius: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --body-bg: rgb(32, 32, 32);
+        --body-color: #fff;
+    }
+
+    body.light {
+        --body-bg: #fff;
+        --body-color: #000;
+    }
+
+    marquee {
+        color: #fff;
+    }
+
+    body.light marquee {
+        color: #000;
+    }
+
+    article {
+        --article-bg: rgb(26, 25, 25);
+        --article-color: bisque;
+    }
+
+    body.light article {
+        --article-bg: rgb(245, 241, 235);
+        --article-color: #000;
+    }
+
+    button#toggle {
+        --button-bg: #fafaad;
+        --button-color: #000;
+    }
+
+    body.light button#toggle {
+        --button-bg: #000;
+        --button-color: #fff;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    article {
+        width: 46%;
+    }
+}
+
+@media (max-width: 696px) {
+    article {
+        width:unset;
+    }
 }
