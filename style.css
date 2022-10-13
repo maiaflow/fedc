@@ -1,3 +1,5 @@
+/*reference*/
+
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;800&display=swap');
 
 @font-face {
@@ -31,6 +33,8 @@
     90%      { background-color: rgb(236,100,75); }
 }
 
+/*general*/
+
 *,
 *::before,
 *::after {
@@ -55,6 +59,8 @@ body.dark {
     --body-color: #fff;
 }
 
+/*typography*/
+
 marquee {
     color: #000;
     font-style: italic;
@@ -63,6 +69,65 @@ marquee {
 body.dark marquee {
     color: #fff;
 }
+
+::selection {
+    color: white;
+    background:#82514b;
+}
+
+h1 {
+    color: rgb(236,100,75);
+    animation: wheelHueColor 20s infinite;
+    font-size: 90px;
+}
+
+h2 {
+    font-family: 'UnifrakturCook', cursive;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: .4rem;
+    background:linear-gradient(#e66456,#9198e5);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;   
+}
+
+h2:hover {
+    background:linear-gradient(#9198e5,#e66456);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+a {
+    font-weight: 800;
+}
+
+a:hover {
+    background:linear-gradient(90deg,#ffbd4a,#ff75b5);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+article section:nth-of-type(1) a {
+    font-family: 'UnifrakturCook', cursive;
+    font-weight: 700;
+    font-size: 4rem;
+    background:linear-gradient(45deg,#eb6b5c 20%,#e49b48,#ede028,#b1f348,#53b9d8,#966dbe 70%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+article a:hover {
+    background:linear-gradient(45deg,#966dbe 20%,#53b9d8,#b1f348,#ede028,#e49b48,#eb6b5c 70%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/*components*/
 
 header {
     /* background: radial-gradient(#7fad36,#7bafdd); */
@@ -126,62 +191,11 @@ aside {
     padding: 5em;
 }
 
-::selection {
-    color: white;
-    background:#82514b;
+footer {
+    margin: 10vh;
 }
 
-h1 {
-    color: rgb(236,100,75);
-    animation: wheelHueColor 20s infinite;
-    font-size: 90px;
-}
-
-h2 {
-    font-family: 'UnifrakturCook', cursive;
-    font-weight: 700;
-    font-size: 5rem;
-    letter-spacing: .4rem;
-    background:linear-gradient(#e66456,#9198e5);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;   
-}
-
-h2:hover {
-    background:linear-gradient(#9198e5,#e66456);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-a {
-    font-weight: 800;
-}
-
-a:hover {
-    background:linear-gradient(90deg,#ffbd4a,#ff75b5);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-article section:nth-of-type(1) a {
-    font-family: 'UnifrakturCook', cursive;
-    font-weight: 700;
-    font-size: 4rem;
-    background:linear-gradient(45deg,#eb6b5c 20%,#e49b48,#ede028,#b1f348,#53b9d8,#966dbe 70%);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-article a:hover {
-    background:linear-gradient(45deg,#966dbe 20%,#53b9d8,#b1f348,#ede028,#e49b48,#eb6b5c 70%);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
+/*buttons*/
 
 button {
     --button-bg: #ffff00;
@@ -212,8 +226,3 @@ button.rainbow {
 button:hover {
     border-radius: 1em;
 }
-
-footer {
-    margin: 10vh;
-}
-
