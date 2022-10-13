@@ -141,8 +141,9 @@ main {
 
 section.top {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 3em;
+    width: 80%;
+    margin: 0 auto;
+    gap: 4em;
 }
 
 section h1 {
@@ -158,24 +159,28 @@ section.right {
 }
 
 section.articles {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em 2em;
+    margin-top: 1em;
 }
 
 article {
-    --article-bg: rgb(249, 242, 232);
+    --article-bg: rgb(245, 241, 235);
     --article-color: #000;
     background-color: var(--article-bg);
     color: var(--article-color);
-    margin: 1em 0;
     padding: 1em;
     border-radius: 1em;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 1em;
+    width: 30%;
 }
 
 article section {
-    display:flex;
+    display: flex;
 }
 
 body.dark article {
@@ -198,7 +203,7 @@ footer {
 /*buttons*/
 
 button {
-    --button-bg: #ffff00;
+    --button-bg: #fafaad;
     background-color: var(--button-bg);
     border: 0;
     box-shadow: none;
@@ -206,7 +211,7 @@ button {
     color: var(--button-color);
     height: 3em;
     width: 3em;
-    border-radius: 40em/50em;
+    border-radius: 50%;
     font-family: 'Dosis', sans-serif;
     margin: 1em;
 }
@@ -221,6 +226,7 @@ button.rainbow {
     animation: wheelHueBgColor 20s infinite;
     width: 16em;
     height: 3.5em;
+    border-radius: 40em/50em;
 }
 
 button:hover {
