@@ -124,10 +124,48 @@ article section:nth-of-type(1) a {
     font-family: 'UnifrakturCook', cursive;
     font-weight: 700;
     font-size: 4rem;
+}
+
+article:nth-of-type(6n+1) section:nth-of-type(1) a {
     background:linear-gradient(45deg,#eb6b5c 20%,#e49b48,#ede028,#b1f348,#53b9d8,#966dbe 70%);
     color: transparent;
     background-clip: text;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
+}
+
+article:nth-of-type(6n+2) section:nth-of-type(1) a {
+    background:radial-gradient(#7fad36,#7bafdd);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; 
+}
+
+article:nth-of-type(6n+3) section:nth-of-type(1) a {
+    background:linear-gradient(90deg,#f1de4e,#e49b48,#c9518f);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; 
+}
+
+article:nth-of-type(6n+4) section:nth-of-type(1) a {
+    background:radial-gradient(#3650ad,#7bafdd,#648392);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; 
+}
+
+article:nth-of-type(6n+5) section:nth-of-type(1) a {
+    background:linear-gradient(45deg,#966dbe 20%,#53b9d8,#b1f348,#ede028,#e49b48,#eb6b5c 70%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; 
+}
+
+article:nth-of-type(6n+6) section:nth-of-type(1) a {
+    background:radial-gradient(#36ad83,#d0ed88);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; 
 }
 
 article a:hover {
