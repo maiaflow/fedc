@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--cream);
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+main {
+    display:flex;
+    height: 80vh;
+    width: 70vw;
+}
+
+header {
+    min-width: 40vw;
+    border-radius: 40px 0px 0px 40px;
+    background: url(images/image-product-desktop.jpg);
+}
+
+article {
+    border-radius: 0px 40px 40px 0px;
+    background: var(--white);
+    width: 20vw;
+    line-height: 2rem;
+}
+
+h1, h2 {
+    font-family: 'Fraunces', serif;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+}
+
+p.subtitle {
+    text-transform: uppercase;
+}
+
+h2 {
+    color: var(--dark-cyan);
+}
+
+h2 span {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+button {
+    background: var(--dark-cyan);
+    color: var(--white);
+    font-family: inherit;
+    border-radius: 20px;
+    padding: 1rem;
+    border: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    position: absolute;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
