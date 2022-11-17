@@ -36,7 +36,7 @@ main header, main article {
 header {
     border-radius: 10px 0 0 10px;
     background: url(images/image-product-desktop.jpg);
-    background-size: contain;
+    background-size: cover;
 }
 
 article {
@@ -44,7 +44,7 @@ article {
     background: var(--white);
     width: 20vw;
     line-height: 2rem;
-    padding: 2rem 2.7rem 2rem 1.7rem;    
+    padding: 2rem 2.7rem 2rem 2.1rem;    
 }
 
 h1, h2 {
@@ -87,12 +87,12 @@ h2 span {
 }
 
 button {
-    background: var(--dark-cyan) url(/images/icon-cart.svg) left 65px center / 16px no-repeat;
+    background: var(--dark-cyan) url(/images/icon-cart.svg) left 60px center / 16px no-repeat;
     color: var(--white);
     font-family: inherit;
     font-weight: 600;
     border-radius: 8px;
-    padding: 1rem 4rem 1rem 6rem;
+    padding: 1rem 3.9rem 1rem 5.5rem;
     border: 0;
 }
 
@@ -103,4 +103,53 @@ button {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 622px) {
+    main {
+        flex-wrap: wrap;
+        display: inline-block;
+    }
+
+    header {
+        padding: 8rem;
+        background: url(/images/image-product-mobile.jpg);
+        background-size: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    article {
+        border-radius: 0px 0px 10px 10px;
+        padding: 1.3rem 1.6rem;
+    }
+
+    main header, main article {
+        width: 21.41rem;
+    }
+
+    h1 {
+        padding-right: 0;
+    }
+
+    h1, h2 {
+        padding-bottom: 1rem;
+    }
+
+    h2 {
+        padding-top: 1.4rem;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    p.subtitle {
+        padding-bottom: .5rem;
+    }
+
+    button {
+        padding: 1rem 5.5rem 1rem 7.5rem;
+        background-position: left 92px center;
+    }
+    
 }
