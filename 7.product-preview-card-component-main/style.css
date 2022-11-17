@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
 *,
@@ -21,11 +28,14 @@ body  {
     font-family: 'Montserrat', sans-serif;
     background: var(--cream);
     min-height: 100vh;
+    display: -ms-grid;
     display: grid;
     place-content: center;
 }
 
 main {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
 }
 
@@ -107,7 +117,8 @@ button {
 
 @media (max-width: 622px) {
     main {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         display: inline-block;
     }
 

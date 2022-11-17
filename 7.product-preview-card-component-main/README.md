@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-product-page-efcQYSEhWf](https://www.frontendmentor.io/solutions/responsive-product-page-efcQYSEhWf)
 - Live Site URL: [https://maiaflow.github.io/fedc/7.product-preview-card-component-main/](https://maiaflow.github.io/fedc/7.product-preview-card-component-main/)
 
 ## My process
@@ -46,6 +46,10 @@ Users should be able to:
 ### What I learned
 
 This tested my knowledge of vertical alignment and background image properties!
+
+I also tried to not do any absolute sizing, instead doing all height and widths with padding in rem.
+
+Also I forgot to validate my HTML before submitting but there were no problems. Phew. Also forgot autoprefixer, but added it post-submission. Though I can't really tell if it added anything this time.
 
 ### Continued development
 
