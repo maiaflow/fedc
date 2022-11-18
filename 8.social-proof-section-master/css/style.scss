@@ -1,0 +1,15 @@
+@import "variables";
+
+body {
+    font-family: $leaguespartan;
+    background: url(../images/bg-pattern-bottom-desktop.svg);
+    main {
+        h1 {
+            font-size: 4rem;
+            color: $verydarkmagenta;
+        }
+        p {
+            color: $verydarkmagenta;
+        }
+    }
+}
