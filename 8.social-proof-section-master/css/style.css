@@ -2,11 +2,50 @@
 body {
   font-family: "League Spartan", sans-serif;
   background: url(../images/bg-pattern-bottom-desktop.svg);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 1rem;
 }
-body main h1 {
-  font-size: 4rem;
+body main header {
+  text-align: center;
+}
+body main header h1 {
+  font-size: 2.5rem;
+  color: hsl(300deg, 43%, 22%);
+  line-height: 0.8;
+  letter-spacing: -0.09rem;
+}
+body main header p {
   color: hsl(300deg, 43%, 22%);
 }
-body main p {
+body main aside {
+  background: hsl(300deg, 24%, 96%);
+  margin: 1rem;
+}
+body main aside section {
+  padding: 0.5rem 6.5rem;
+}
+body main aside section section {
+  padding: 0.5rem 0.1rem;
+  background-image: url(../images/icon-star.svg);
+  background-position: top center;
+  background-repeat: space no-repeat;
+  background-origin: padding-box;
+}
+body main aside h2 {
   color: hsl(300deg, 43%, 22%);
+  text-align: center;
+}
+body main article {
+  background: hsl(300deg, 43%, 22%);
+  color: hsl(0deg, 0%, 100%);
+}
+body main article h2 {
+  font-weight: 700;
+}
+body main article h3 {
+  color: hsl(333deg, 80%, 67%);
+}
+body main article p {
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

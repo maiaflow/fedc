@@ -3,13 +3,52 @@
 body {
     font-family: $leaguespartan;
     background: url(../images/bg-pattern-bottom-desktop.svg);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 1rem;
     main {
-        h1 {
-            font-size: 4rem;
-            color: $verydarkmagenta;
+        header {
+            text-align: center;
+            h1 {
+                font-size: 2.5rem;
+                color: $verydarkmagenta;
+                line-height: .8;
+                letter-spacing: -0.09rem;
+            }
+            p {
+                color: $verydarkmagenta;
+            }
         }
-        p {
-            color: $verydarkmagenta;
+        aside {
+            background: $lightgrayishmagenta;
+            margin: 1rem;
+            section {
+                padding: .5rem 6.5rem;
+                section {
+                    padding: .5rem .1rem;
+                    background-image: url(../images/icon-star.svg);
+                    background-position: top center;
+                    background-repeat: space no-repeat;
+                    background-origin: padding-box;
+                }
+            }
+            h2 {
+                color: $verydarkmagenta;
+                text-align: center;
+            }
+        }
+        article {
+            background: $verydarkmagenta;
+            color: $white;
+            h2 {
+                font-weight: 700;
+            }
+            h3 {
+                color: $softpink;
+            }
+            p {
+                font-weight: 400;
+            }
         }
     }
 }
