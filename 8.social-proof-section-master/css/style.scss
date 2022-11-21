@@ -1,11 +1,20 @@
 @import "variables";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-family: $leaguespartan;
-    background: url(../images/bg-pattern-bottom-desktop.svg);
+    background: url(../images/bg-pattern-bottom-mobile.svg);
     font-size: 15px;
     font-weight: 400;
-    padding: 1rem;
+    padding: 4rem .8rem;
     main {
         header {
             text-align: center;
@@ -14,34 +23,23 @@ body {
                 color: $verydarkmagenta;
                 line-height: .8;
                 letter-spacing: -0.09rem;
+                padding: 0rem 2rem;
             }
             p {
+                padding: 1rem 0rem;
                 color: $verydarkmagenta;
+                font-size: 1.2rem;
+                line-height: 1.4;
             }
         }
-        aside:first-of-type {
+        aside {
             background: $lightgrayishmagenta;
+            border-radius: 0.5rem;
+            padding: 1rem;
             margin: 1rem;
-            section {
-                padding: .5rem 6.5rem;
-                section {
-                    padding: .5rem .1rem;
-                    background-image: url(../images/icon-star.svg);
-                    background-position: top center;
-                    background-repeat: space no-repeat;
-                    background-origin: padding-box;
-                }
-            }
-            h2 {
-                color: $verydarkmagenta;
-                text-align: center;
-            }
-        }
-        aside:nth-of-type(2) {
-            background: $lightgrayishmagenta;
             section:first-of-type {
                 width: 101px;
-                height: 50px;
+                height: 20px;
                 margin: 0 auto;
                 background-image: url(../images/icon-star.svg);
                 background-position: top center;
@@ -50,14 +48,19 @@ body {
             }
             section:nth-of-type(2) {
                 h2 {
+                    padding-top: 1rem;
                     color: $verydarkmagenta;
                     text-align: center;
+                    font-size: 1rem;
                 }
             }
         }
         article {
             background: $verydarkmagenta;
             color: $white;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
             h2 {
                 font-weight: 700;
             }
@@ -65,7 +68,8 @@ body {
                 color: $softpink;
             }
             p {
-                font-weight: 400;
+                padding: 1rem 0;
+                line-height: 1.2;
             }
         }
     }

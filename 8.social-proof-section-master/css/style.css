@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "League Spartan", sans-serif;
-  background: url(../images/bg-pattern-bottom-desktop.svg);
+  background: url(../images/bg-pattern-bottom-mobile.svg);
   font-size: 15px;
   font-weight: 400;
-  padding: 1rem;
+  padding: 4rem 0.8rem;
 }
 body main header {
   text-align: center;
@@ -14,47 +23,41 @@ body main header h1 {
   color: hsl(300deg, 43%, 22%);
   line-height: 0.8;
   letter-spacing: -0.09rem;
+  padding: 0rem 2rem;
 }
 body main header p {
+  padding: 1rem 0rem;
   color: hsl(300deg, 43%, 22%);
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
-body main aside:first-of-type {
+body main aside {
   background: hsl(300deg, 24%, 96%);
+  border-radius: 0.5rem;
+  padding: 1rem;
   margin: 1rem;
 }
-body main aside:first-of-type section {
-  padding: 0.5rem 6.5rem;
-}
-body main aside:first-of-type section section {
-  padding: 0.5rem 0.1rem;
-  background-image: url(../images/icon-star.svg);
-  background-position: top center;
-  background-repeat: space no-repeat;
-  background-origin: padding-box;
-}
-body main aside:first-of-type h2 {
-  color: hsl(300deg, 43%, 22%);
-  text-align: center;
-}
-body main aside:nth-of-type(2) {
-  background: hsl(300deg, 24%, 96%);
-}
-body main aside:nth-of-type(2) section:first-of-type {
+body main aside section:first-of-type {
   width: 101px;
-  height: 50px;
+  height: 20px;
   margin: 0 auto;
   background-image: url(../images/icon-star.svg);
   background-position: top center;
   background-repeat: space no-repeat;
   background-origin: content-box;
 }
-body main aside:nth-of-type(2) section:nth-of-type(2) h2 {
+body main aside section:nth-of-type(2) h2 {
+  padding-top: 1rem;
   color: hsl(300deg, 43%, 22%);
   text-align: center;
+  font-size: 1rem;
 }
 body main article {
   background: hsl(300deg, 43%, 22%);
   color: hsl(0deg, 0%, 100%);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 body main article h2 {
   font-weight: 700;
@@ -63,5 +66,6 @@ body main article h3 {
   color: hsl(333deg, 80%, 67%);
 }
 body main article p {
-  font-weight: 400;
+  padding: 1rem 0;
+  line-height: 1.2;
 }/*# sourceMappingURL=style.css.map */
