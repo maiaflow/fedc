@@ -12,10 +12,11 @@
 
 body {
     font-family: $leaguespartan;
-    background: url(../images/bg-pattern-bottom-mobile.svg);
+    background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg) bottom;
+    background-repeat: no-repeat;
     font-size: 15px;
     font-weight: 400;
-    padding: 4rem .8rem;
+    padding: 5rem .8rem;
     main {
         header {
             text-align: center;
@@ -49,7 +50,7 @@ body {
             }
             section:nth-of-type(2) {
                 h2 {
-                    padding-top: 1rem;
+                    padding-top: 0.6rem;
                     color: $verydarkmagenta;
                     text-align: center;
                     font-size: 1rem;

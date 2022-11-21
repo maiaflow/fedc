@@ -10,10 +10,11 @@
 
 body {
   font-family: "League Spartan", sans-serif;
-  background: url(../images/bg-pattern-bottom-mobile.svg);
+  background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg) bottom;
+  background-repeat: no-repeat;
   font-size: 15px;
   font-weight: 400;
-  padding: 4rem 0.8rem;
+  padding: 5rem 0.8rem;
 }
 body main header {
   text-align: center;
@@ -47,7 +48,7 @@ body main aside section:first-of-type {
   background-origin: content-box;
 }
 body main aside section:nth-of-type(2) h2 {
-  padding-top: 1rem;
+  padding-top: 0.6rem;
   color: hsl(300deg, 43%, 22%);
   text-align: center;
   font-size: 1rem;
