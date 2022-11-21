@@ -19,7 +19,7 @@ body {
                 color: $verydarkmagenta;
             }
         }
-        aside {
+        aside:first-of-type {
             background: $lightgrayishmagenta;
             margin: 1rem;
             section {
@@ -35,6 +35,24 @@ body {
             h2 {
                 color: $verydarkmagenta;
                 text-align: center;
+            }
+        }
+        aside:nth-of-type(2) {
+            background: $lightgrayishmagenta;
+            section:first-of-type {
+                width: 101px;
+                height: 50px;
+                margin: 0 auto;
+                background-image: url(../images/icon-star.svg);
+                background-position: top center;
+                background-repeat: space no-repeat;
+                background-origin: content-box;
+            }
+            section:nth-of-type(2) {
+                h2 {
+                    color: $verydarkmagenta;
+                    text-align: center;
+                }
             }
         }
         article {

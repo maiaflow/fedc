@@ -18,21 +18,37 @@ body main header h1 {
 body main header p {
   color: hsl(300deg, 43%, 22%);
 }
-body main aside {
+body main aside:first-of-type {
   background: hsl(300deg, 24%, 96%);
   margin: 1rem;
 }
-body main aside section {
+body main aside:first-of-type section {
   padding: 0.5rem 6.5rem;
 }
-body main aside section section {
+body main aside:first-of-type section section {
   padding: 0.5rem 0.1rem;
   background-image: url(../images/icon-star.svg);
   background-position: top center;
   background-repeat: space no-repeat;
   background-origin: padding-box;
 }
-body main aside h2 {
+body main aside:first-of-type h2 {
+  color: hsl(300deg, 43%, 22%);
+  text-align: center;
+}
+body main aside:nth-of-type(2) {
+  background: hsl(300deg, 24%, 96%);
+}
+body main aside:nth-of-type(2) section:first-of-type {
+  width: 101px;
+  height: 50px;
+  margin: 0 auto;
+  background-image: url(../images/icon-star.svg);
+  background-position: top center;
+  background-repeat: space no-repeat;
+  background-origin: content-box;
+}
+body main aside:nth-of-type(2) section:nth-of-type(2) h2 {
   color: hsl(300deg, 43%, 22%);
   text-align: center;
 }
