@@ -56,16 +56,53 @@ body main article {
   background: hsl(300deg, 43%, 22%);
   color: hsl(0deg, 0%, 100%);
   margin: 1rem;
-  padding: 1rem;
+  padding: 2.3rem 2rem 1rem;
   border-radius: 0.5rem;
 }
-body main article h2 {
-  font-weight: 700;
+body main article:first-of-type header::before {
+  background: url(../images/image-colton.jpg) top center/40px 40px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 3rem;
+  display: block;
 }
-body main article h3 {
+body main article:nth-of-type(2) header::before {
+  background: url(../images/image-irene.jpg) top center/40px 40px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 3rem;
+  display: block;
+}
+body main article:last-of-type header::before {
+  background: url(../images/image-anne.jpg) top center/40px 40px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 3rem;
+  display: block;
+}
+body main article header {
+  display: flex;
+  align-items: center;
+}
+body main article header section {
+  padding-left: 1rem;
+}
+body main article header section h2 {
+  font-weight: 500;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+body main article header section h3 {
   color: hsl(333deg, 80%, 67%);
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: left;
 }
 body main article p {
   padding: 1rem 0;
-  line-height: 1.2;
+  line-height: 1.4;
 }/*# sourceMappingURL=style.css.map */

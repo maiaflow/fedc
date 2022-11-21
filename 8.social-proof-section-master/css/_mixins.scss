@@ -1,0 +1,8 @@
+@mixin headshot($path) {
+    background: $path top center / 40px 40px;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 3rem;
+    display: block;
+}
