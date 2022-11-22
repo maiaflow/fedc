@@ -48,6 +48,8 @@ Users should be able to:
 
 I learned about SASS! I'm starting with .scss files, but I'm pleased with how I've been able to catch on with mixins and variables and nested classes.
 
+I'm proud of how I figured out the stars for the ratings! Can't figure out how to add the code in here right now but you can find it! :D
+
 ### Continued development
 
 I'd like to continue using SASS to get even more comfortable with it. Additionally I'd like to feel more comfortable with Grid.
