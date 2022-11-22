@@ -117,13 +117,12 @@ body main div.articles article p {
   body main {
     display: grid;
     align-content: center;
-    grid-template-columns: 40vw;
-    grid-auto-rows: 40vh;
+    grid: 1fr/0.81fr 1.1fr;
+    gap: 3rem 6rem;
   }
   body main header {
     align-self: center;
     text-align: left;
-    margin-right: 4rem;
   }
   body main header h1 {
     font-size: 3.8rem;
@@ -134,7 +133,8 @@ body main div.articles article p {
   }
   body main div.ratings aside {
     display: flex;
-    width: 23rem;
+    width: 26rem;
+    padding-right: 3.6rem;
   }
   body main div.ratings aside:nth-of-type(2) {
     margin-left: 4rem;

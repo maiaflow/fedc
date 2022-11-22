@@ -6,12 +6,11 @@
         main {
             display: grid;
             align-content: center;
-            grid-template-columns: 40vw;
-            grid-auto-rows: 40vh;
+            grid: 1fr / 0.81fr 1.1fr;
+            gap: 3rem 6rem;
             header {
                 align-self: center;
                 text-align: left;
-                margin-right: 4rem;
                 h1 {
                    font-size: 3.8rem;
                    padding: 0; 
@@ -21,7 +20,8 @@
                 align-self: center;
                 aside {
                     display: flex;
-                    width: 23rem;
+                    width: 26rem;
+                    padding-right: 3.6rem;
                     &:nth-of-type(2) {
                         @include ratings-margin($rm2);
                     }
