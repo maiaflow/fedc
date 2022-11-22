@@ -32,13 +32,13 @@ body main header p {
   font-size: 1.2rem;
   line-height: 1.4;
 }
-body main aside {
+body main div.ratings aside {
   background: hsl(300deg, 24%, 96%);
   border-radius: 0.5rem;
   padding: 1rem;
   margin: 1rem;
 }
-body main aside section:first-of-type {
+body main div.ratings aside section:first-of-type {
   width: 101px;
   height: 20px;
   margin: 0 auto;
@@ -47,20 +47,20 @@ body main aside section:first-of-type {
   background-repeat: space no-repeat;
   background-origin: content-box;
 }
-body main aside section:nth-of-type(2) h2 {
+body main div.ratings aside section:nth-of-type(2) h2 {
   padding-top: 0.6rem;
   color: hsl(300deg, 43%, 22%);
   text-align: center;
   font-size: 1rem;
 }
-body main article {
+body main div.articles article {
   background: hsl(300deg, 43%, 22%);
   color: hsl(0deg, 0%, 100%);
   margin: 1rem;
   padding: 2.3rem 2rem 1rem;
   border-radius: 0.5rem;
 }
-body main article:first-of-type header::before {
+body main div.articles article:first-of-type header::before {
   background: url(../images/image-colton.jpg) top center/40px 40px;
   content: "";
   width: 40px;
@@ -68,7 +68,7 @@ body main article:first-of-type header::before {
   border-radius: 3rem;
   display: block;
 }
-body main article:nth-of-type(2) header::before {
+body main div.articles article:nth-of-type(2) header::before {
   background: url(../images/image-irene.jpg) top center/40px 40px;
   content: "";
   width: 40px;
@@ -76,7 +76,7 @@ body main article:nth-of-type(2) header::before {
   border-radius: 3rem;
   display: block;
 }
-body main article:last-of-type header::before {
+body main div.articles article:last-of-type header::before {
   background: url(../images/image-anne.jpg) top center/40px 40px;
   content: "";
   width: 40px;
@@ -84,26 +84,81 @@ body main article:last-of-type header::before {
   border-radius: 3rem;
   display: block;
 }
-body main article header {
+body main div.articles article header {
   display: flex;
   align-items: center;
 }
-body main article header section {
+body main div.articles article header section {
   padding-left: 1rem;
 }
-body main article header section h2 {
+body main div.articles article header section h2 {
   font-weight: 500;
   text-align: left;
   font-size: 1rem;
   line-height: 1.4;
 }
-body main article header section h3 {
+body main div.articles article header section h3 {
   color: hsl(333deg, 80%, 67%);
   font-weight: 400;
   font-size: 1rem;
   text-align: left;
 }
-body main article p {
+body main div.articles article p {
   padding: 1rem 0;
   line-height: 1.4;
+}
+
+@media (min-width: 1086px) {
+  body {
+    background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg) bottom;
+    background-repeat: no-repeat;
+    padding: 5rem 9rem;
+  }
+  body main {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 40vw;
+    grid-auto-rows: 40vh;
+  }
+  body main header {
+    align-self: center;
+    text-align: left;
+    margin-right: 4rem;
+  }
+  body main header h1 {
+    font-size: 3.8rem;
+    padding: 0;
+  }
+  body main div.ratings {
+    align-self: center;
+  }
+  body main div.ratings aside {
+    display: flex;
+    width: 23rem;
+  }
+  body main div.ratings aside:nth-of-type(2) {
+    margin-left: 4rem;
+  }
+  body main div.ratings aside:nth-of-type(3) {
+    margin-left: 8rem;
+  }
+  body main div.ratings aside section:nth-of-type(2) {
+    align-self: center;
+  }
+  body main div.ratings aside section:nth-of-type(2) h2 {
+    padding: 0;
+  }
+  body main div.articles {
+    grid-column: 1/3;
+    display: flex;
+  }
+  body main div.articles article {
+    height: 14rem;
+  }
+  body main div.articles article:nth-of-type(2) {
+    margin-top: 2rem;
+  }
+  body main div.articles article:nth-of-type(3) {
+    margin-top: 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */

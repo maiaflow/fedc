@@ -1,0 +1,54 @@
+@media (min-width: 1086px) {
+    body {
+        background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg) bottom;
+        background-repeat: no-repeat;
+        padding: 5rem 9rem;
+        main {
+            display: grid;
+            align-content: center;
+            grid-template-columns: 40vw;
+            grid-auto-rows: 40vh;
+            header {
+                align-self: center;
+                text-align: left;
+                margin-right: 4rem;
+                h1 {
+                   font-size: 3.8rem;
+                   padding: 0; 
+                }
+            }
+            div.ratings {
+                align-self: center;
+                aside {
+                    display: flex;
+                    width: 23rem;
+                    &:nth-of-type(2) {
+                        @include ratings-margin($rm2);
+                    }
+                    &:nth-of-type(3) {
+                        @include ratings-margin($rm3);
+                    }
+                    section:nth-of-type(2) {
+                        align-self: center;
+                        h2 {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            div.articles {
+                grid-column: 1 / 3;
+                display: flex;
+                article {
+                    height: 14rem;
+                    &:nth-of-type(2) {
+                        @include articles-margin($am2);
+                    }
+                    &:nth-of-type(3) {
+                        @include articles-margin($am3);
+                    }
+                }
+            }
+        }
+    }
+}

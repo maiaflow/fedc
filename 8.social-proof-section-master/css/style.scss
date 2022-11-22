@@ -34,67 +34,73 @@ body {
                 line-height: 1.4;
             }
         }
-        aside {
-            background: $lightgrayishmagenta;
-            border-radius: 0.5rem;
-            padding: 1rem;
-            margin: 1rem;
-            section:first-of-type {
-                width: 101px;
-                height: 20px;
-                margin: 0 auto;
-                background-image: url(../images/icon-star.svg);
-                background-position: top center;
-                background-repeat: space no-repeat;
-                background-origin: content-box;
-            }
-            section:nth-of-type(2) {
-                h2 {
-                    padding-top: 0.6rem;
-                    color: $verydarkmagenta;
-                    text-align: center;
-                    font-size: 1rem;
+        div.ratings {
+            aside {
+                background: $lightgrayishmagenta;
+                border-radius: 0.5rem;
+                padding: 1rem;
+                margin: 1rem;
+                section:first-of-type {
+                    width: 101px;
+                    height: 20px;
+                    margin: 0 auto;
+                    background-image: url(../images/icon-star.svg);
+                    background-position: top center;
+                    background-repeat: space no-repeat;
+                    background-origin: content-box;
                 }
-            }
-        }
-        article {
-            background: $verydarkmagenta;
-            color: $white;
-            margin: 1rem;
-            padding: 2.3rem 2rem 1rem;
-            border-radius: 0.5rem;
-            &:first-of-type header::before {
-                @include headshot($colton);
-            }
-            &:nth-of-type(2) header::before {
-                @include headshot($irene);
-            }
-            &:last-of-type header::before {
-                @include headshot($anne);
-            }
-            header {
-                display:flex;
-                align-items: center;
-                section {
-                    padding-left: 1rem;
+                section:nth-of-type(2) {
                     h2 {
-                        font-weight: 500;
-                        text-align: left;
+                        padding-top: 0.6rem;
+                        color: $verydarkmagenta;
+                        text-align: center;
                         font-size: 1rem;
-                        line-height: 1.4;
-                    }
-                    h3 {
-                        color: $softpink;
-                        font-weight: 400;
-                        font-size: 1rem;
-                        text-align: left;
                     }
                 }
             }
-            p {
-                padding: 1rem 0;
-                line-height: 1.4;
-            }
         }
+        div.articles {
+            article {
+                background: $verydarkmagenta;
+                color: $white;
+                margin: 1rem;
+                padding: 2.3rem 2rem 1rem;
+                border-radius: 0.5rem;
+                &:first-of-type header::before {
+                    @include headshot($colton);
+                }
+                &:nth-of-type(2) header::before {
+                    @include headshot($irene);
+                }
+                &:last-of-type header::before {
+                    @include headshot($anne);
+                }
+                header {
+                    display:flex;
+                    align-items: center;
+                    section {
+                        padding-left: 1rem;
+                        h2 {
+                            font-weight: 500;
+                            text-align: left;
+                            font-size: 1rem;
+                            line-height: 1.4;
+                        }
+                        h3 {
+                            color: $softpink;
+                            font-weight: 400;
+                            font-size: 1rem;
+                            text-align: left;
+                        }
+                    }
+                }
+                p {
+                    padding: 1rem 0;
+                    line-height: 1.4;
+                }
+            }
+        }  
     }
 }
+
+@import "media";
