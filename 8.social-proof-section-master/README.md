@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-reviews-page-using-sassscss-LZbdZg0Ut-](https://www.frontendmentor.io/solutions/responsive-reviews-page-using-sassscss-LZbdZg0Ut-)
 - Live Site URL: [https://maiaflow.github.io/fedc/8.social-proof-section-master/](https://maiaflow.github.io/fedc/8.social-proof-section-master/)
 
 ## My process
