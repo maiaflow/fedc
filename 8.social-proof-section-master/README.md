@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://maiaflow.github.io/fedc/8.social-proof-section-master/](https://maiaflow.github.io/fedc/8.social-proof-section-master/)
 
 ## My process
 
@@ -54,12 +54,11 @@ I'd like to continue using SASS to get even more comfortable with it. Additional
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS-Tricks Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) 
+- [CSS-Tricks Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@maiaflow](https://www.frontendmentor.io/profile/maiaflow)
 
 ## Acknowledgments
