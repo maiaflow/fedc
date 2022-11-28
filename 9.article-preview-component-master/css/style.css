@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: hsl(217deg, 19%, 35%);
+  background: hsl(210deg, 46%, 95%);
+  padding: 0 22rem;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+body main {
+  display: flex;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 2rem 2rem 2rem hsl(214deg, 17%, 51%);
+}
+body main header {
+  padding: 8rem 10rem;
+  background: url(../images/drawers.jpg);
+  background-size: cover;
+  border-radius: 2rem 0 0 2rem;
+}
+body main section {
+  padding: 2rem;
+}
+body main section h1 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+body main section p {
+  color: hsl(214deg, 17%, 51%);
+  line-height: 1.3;
+}
+body main section footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body main section footer section#avatar {
+  flex: 1;
+}
+body main section footer section#avatar img {
+  border-radius: 10rem;
+  height: 2rem;
+}
+body main section footer section#namedate {
+  flex: 2;
+}
+body main section footer section#namedate h2 {
+  font-size: 0.9rem;
+}
+body main section footer section#namedate p {
+  color: hsl(212deg, 23%, 69%);
+}
+body main section footer section#share {
+  flex: 1;
+}
+body main section footer section#share img {
+  background: hsl(210deg, 46%, 95%);
+  padding: 1rem;
+  border-radius: 2rem;
+}/*# sourceMappingURL=style.css.map */
