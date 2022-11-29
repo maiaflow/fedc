@@ -21,50 +21,53 @@ body {
     main {
         display: flex;
         background: #fff;
-        border-radius: 2rem;
-        box-shadow: 2rem 2rem 2rem $desaturatedDarkBlue;
+        border-radius: 0.7rem;
+        box-shadow: 0.2rem 2rem 2rem hsla(214, 17%, 51%,.1);
         header {
-            padding: 8rem 10rem;
+            padding: 8rem 9rem;
             background: url(../images/drawers.jpg);
             background-size: cover;
-            border-radius: 2rem 0 0 2rem;
+            border-radius: 0.7rem 0 0 0.7rem;
         }
         section {
-            padding: 2rem;
+            padding: 2rem 2.5rem;
             h1 {
                 font-size: 1.2rem;
-                margin-bottom: 1rem;
+                margin: 0 1rem 1rem 0;
             }
             p {
                 color: $desaturatedDarkBlue;
-                line-height: 1.3;
+                line-height: 1.5;
             }
             footer {
                 display: flex;
-                justify-content: flex-start;
                 align-items: center;
-                section#avatar {
-                    flex: 1;
+                gap: 1rem;
+                margin-top: 1rem;
+                div#avatar {
                     img {
                         border-radius: 10rem;
-                        height: 2rem;
+                        height: 2.5rem;
                     }
                 }
-                section#namedate {
-                    flex: 2;
+                div#namedate {
+                    flex: 3;
                     h2 {
-                        font-size: 0.9rem;
+                        font-size: 0.8rem;
                     }
                     p {
                         color: $grayishBlue;
                     }
                 }
-                section#share {
-                    flex: 1;
-                    img {
+                div#share {
+                    div#icon {
                         background: $lightGrayishBlue;
-                        padding: 1rem;
+                        padding: 0.5rem;
                         border-radius: 2rem;
+                        width: 2.1rem;
+                        img {
+                            width: 1rem;
+                        }
                     }
                 }
             }
