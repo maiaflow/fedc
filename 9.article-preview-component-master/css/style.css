@@ -68,4 +68,26 @@ body main section footer div#share div#icon {
 }
 body main section footer div#share div#icon img {
   width: 1rem;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 1.5rem;
+  }
+  body main {
+    flex-wrap: wrap;
+  }
+  body main header {
+    padding: 6.8rem 10.5rem;
+    border-radius: 0.7rem 0.7rem 0 0;
+  }
+  body main section {
+    padding: 2.3rem 2rem 1rem;
+  }
+  body main section h1 {
+    font-size: 1rem;
+  }
+  body main section footer {
+    margin-top: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
