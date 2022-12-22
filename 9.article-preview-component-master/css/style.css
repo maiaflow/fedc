@@ -60,14 +60,52 @@ body main section footer div#namedate h2 {
 body main section footer div#namedate p {
   color: hsl(212deg, 23%, 69%);
 }
+body main section footer div#share {
+  position: relative;
+}
+body main section footer div#share div#pop {
+  background: hsl(217deg, 19%, 35%);
+  color: hsl(212deg, 23%, 69%);
+  position: absolute;
+  bottom: 55px;
+  right: -60px;
+  width: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding: 1em;
+  border-radius: 1em;
+  display: none;
+}
+body main section footer div#share div#pop::after {
+  content: " ";
+  position: absolute;
+  right: 65px;
+  bottom: -15px;
+  border-top: 15px solid hsl(217deg, 19%, 35%);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: none;
+}
 body main section footer div#share div#icon {
   background: hsl(210deg, 46%, 95%);
   padding: 0.5rem;
   border-radius: 2rem;
   width: 2.1rem;
 }
+body main section footer div#share div#icon:hover {
+  background: hsl(214deg, 17%, 51%);
+  cursor: pointer;
+}
+body main section footer div#share div#icon:hover img {
+  filter: grayscale(1) brightness(3);
+}
 body main section footer div#share div#icon img {
   width: 1rem;
+}
+body .attribution {
+  font-size: smaller;
+  text-align: center;
 }
 
 @media (max-width: 500px) {
@@ -78,11 +116,11 @@ body main section footer div#share div#icon img {
     flex-wrap: wrap;
   }
   body main header {
-    padding: 6.8rem 10.5rem;
+    padding: 6.5rem 10.2rem;
     border-radius: 0.7rem 0.7rem 0 0;
   }
   body main section {
-    padding: 2.3rem 2rem 1rem;
+    padding: 2.6rem 1.7rem 1rem 2rem;
   }
   body main section h1 {
     font-size: 1rem;

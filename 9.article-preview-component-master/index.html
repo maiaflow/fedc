@@ -33,6 +33,12 @@
           <p>28 Jun 2020</p>
         </div>
         <div id="share">
+          <div id="pop">
+            Share 
+            <img src="./images/icon-facebook.svg">
+            <img src="./images/icon-twitter.svg">
+            <img src="./images/icon-pinterest.svg">
+          </div>
           <div id="icon">
             <img src="./images/icon-share.svg" alt="share icon">
           </div>
@@ -43,7 +49,19 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">maia</a>.
   </div>
+
+  <script>
+    const targetDiv = document.getElementById("pop");
+    const btn = document.getElementById("icon");
+    btn.onclick = function () {
+      if (targetDiv.style.display !== "block") {
+        targetDiv.style.display = "block";
+      } else {
+        targetDiv.style.display = "none";
+      }
+    };
+    </script>
 </body>
 </html>
