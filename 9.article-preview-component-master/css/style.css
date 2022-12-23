@@ -67,25 +67,29 @@ body main section footer div#share div#pop {
   background: hsl(217deg, 19%, 35%);
   color: hsl(212deg, 23%, 69%);
   position: absolute;
-  bottom: 55px;
-  right: -60px;
-  width: 200px;
-  text-align: center;
+  bottom: 60px;
+  right: -105px;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  padding: 1em;
-  border-radius: 1em;
+  border-radius: 0.6em;
+  box-shadow: 1em 1em 2em hsla(217deg, 19%, 35%, 0.3);
   display: none;
 }
 body main section footer div#share div#pop::after {
   content: " ";
   position: absolute;
-  right: 65px;
+  right: 107px;
   bottom: -15px;
   border-top: 15px solid hsl(217deg, 19%, 35%);
   border-right: 15px solid transparent;
   border-left: 15px solid transparent;
   border-bottom: none;
+}
+body main section footer div#share div#pop div#flexmom {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1.1em 3em;
 }
 body main section footer div#share div#icon {
   background: hsl(210deg, 46%, 95%);
@@ -95,10 +99,12 @@ body main section footer div#share div#icon {
 }
 body main section footer div#share div#icon:hover {
   background: hsl(214deg, 17%, 51%);
+  -webkit-transition: background-color 1s ease;
   cursor: pointer;
 }
 body main section footer div#share div#icon:hover img {
   filter: grayscale(1) brightness(3);
+  -webkit-transition: filter 1s ease;
 }
 body main section footer div#share div#icon img {
   width: 1rem;

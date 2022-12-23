@@ -65,24 +65,28 @@ body {
                         background: $veryDarkGrayishBlue;
                         color: $grayishBlue;
                         position: absolute;
-                        bottom: 55px;
-                        right: -60px;
-                        width: 200px;
-                        text-align: center;
+                        bottom: 60px;
+                        right: -105px;
                         text-transform: uppercase;
                         letter-spacing: 0.5em;
-                        padding: 1em;
-                        border-radius: 1em;
+                        border-radius: 0.6em;
+                        box-shadow: 1em 1em 2em hsla(217, 19%, 35%, 0.3);
                         display: none;
                         &::after {
                             content: " ";
                             position: absolute;
-                            right: 65px;
+                            right: 107px;
                             bottom: -15px;
                             border-top: 15px solid $veryDarkGrayishBlue;
                             border-right: 15px solid transparent;
                             border-left: 15px solid transparent;
                             border-bottom: none;
+                        }
+                        div#flexmom {
+                            display: flex;
+                            align-items: center;
+                            gap: 1em;
+                            padding: 1.1em 3em;
                         }
                     }
                     div#icon {
@@ -92,9 +96,11 @@ body {
                         width: 2.1rem;
                         &:hover {
                             background: $desaturatedDarkBlue;
+                            -webkit-transition: background-color 1s ease;
                             cursor: pointer;
                             img {
                                 filter: grayscale(1) brightness(3);
+                                -webkit-transition: filter 1s ease;
                             }
                         }
                         img {
