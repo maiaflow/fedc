@@ -127,7 +127,7 @@ body .attribution {
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-@media (max-width: 500px) {
+@media (max-width: 1262px) {
   body {
     padding: 1.5rem;
   }
@@ -135,8 +135,9 @@ body .attribution {
     flex-wrap: wrap;
   }
   body main header {
-    padding: 6.5rem 10.2rem;
+    width: 100%;
     border-radius: 0.7rem 0.7rem 0 0;
+    background-position: 50%;
   }
   body main section {
     padding: 2.6rem 1.7rem 1rem 2rem;
