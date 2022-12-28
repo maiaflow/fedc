@@ -129,7 +129,7 @@ body .attribution {
 */
 @media (max-width: 1262px) {
   body {
-    padding: 1.5rem;
+    padding: 6.5vw;
   }
   body main {
     flex-wrap: wrap;
