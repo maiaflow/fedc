@@ -46,17 +46,21 @@ Users should be able to:
 
 ### What I learned
 
-Proud of my continued grasp of SCSS and JS. Particularly I'm happy with how I figured out changing the color of the arrow .svg when used as an img src like I did using "filter". Also I thought it was very simple and clean that I was able to use "unset" in the else of the js. Proud of myself that I did the JS all by myself, just consulted with Eric that my thinking of how to do this was correct.
-
-I have doubts if i did the autoprefixing correctly- i did it manually on my two scss files. I checked on safari and everything looks good, but @Eric let's look at the automatic way to do this next time we chat
+Proud of my continued grasp of SCSS and JS. Particularly I'm happy with how I figured out changing the color of the arrow .svg when used as an img src like I did using "filter". 
 
 ```css
     filter: grayscale(1) brightness(3);
 
 ```
+
+Also I thought it was very simple and clean that I was able to use "unset" in the else of the js. Proud of myself that I did the JS all by myself, just consulted with Eric that my thinking of how to do this was correct.
+
 ```js
     shArrow.style.filter = "unset";
 ```
+
+I have doubts if i did the autoprefixing correctly- i did it manually on my two scss files. I checked on safari and everything looks good, but @Eric let's look at the automatic way to do this next time we chat
+
 
 ### Continued development
 
