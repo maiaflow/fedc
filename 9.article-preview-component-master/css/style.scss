@@ -71,7 +71,7 @@ body {
                         letter-spacing: 0.5em;
                         border-radius: 0.6em;
                         box-shadow: 1em 1em 2em hsla(217, 19%, 35%, 0.3);
-                        display: none;
+                        display: block;
                         &::after {
                             content: " ";
                             position: absolute;
@@ -96,11 +96,11 @@ body {
                         width: 2.1rem;
                         &:hover {
                             background: $desaturatedDarkBlue;
-                            -webkit-transition: background-color 1s ease;
+                            transition: background-color 1s ease;
                             cursor: pointer;
                             img {
                                 filter: grayscale(1) brightness(3);
-                                -webkit-transition: filter 1s ease;
+                                transition: filter 1s ease;
                             }
                         }
                         img {

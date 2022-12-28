@@ -14,6 +14,23 @@
                 }
                 footer {
                     margin-top: 1.5rem;
+                    div#share {
+                        div#pop {
+                            bottom: -21px;
+                            right: -27px;
+                            border-radius: 0 0 0.6em 0.6em;
+                            &::after {
+                                border: unset;
+                            }
+                            div#flexmom {
+                                padding: 1.6em 8.9em 1.8em 2.9em;
+                            }
+                        }
+                        div#icon {
+                            position: relative;
+                            z-index: 4;
+                        }
+                    }
                 }
             }
         }

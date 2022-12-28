@@ -73,7 +73,7 @@ body main section footer div#share div#pop {
   letter-spacing: 0.5em;
   border-radius: 0.6em;
   box-shadow: 1em 1em 2em hsla(217deg, 19%, 35%, 0.3);
-  display: none;
+  display: block;
 }
 body main section footer div#share div#pop::after {
   content: " ";
@@ -99,12 +99,12 @@ body main section footer div#share div#icon {
 }
 body main section footer div#share div#icon:hover {
   background: hsl(214deg, 17%, 51%);
-  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
   cursor: pointer;
 }
 body main section footer div#share div#icon:hover img {
   filter: grayscale(1) brightness(3);
-  -webkit-transition: filter 1s ease;
+  transition: filter 1s ease;
 }
 body main section footer div#share div#icon img {
   width: 1rem;
@@ -133,5 +133,20 @@ body .attribution {
   }
   body main section footer {
     margin-top: 1.5rem;
+  }
+  body main section footer div#share div#pop {
+    bottom: -21px;
+    right: -27px;
+    border-radius: 0 0 0.6em 0.6em;
+  }
+  body main section footer div#share div#pop::after {
+    border: unset;
+  }
+  body main section footer div#share div#pop div#flexmom {
+    padding: 1.6em 8.9em 1.8em 2.9em;
+  }
+  body main section footer div#share div#icon {
+    position: relative;
+    z-index: 4;
   }
 }/*# sourceMappingURL=style.css.map */
