@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 500px) {
     body {
         padding: 1.5rem;
         main {
-            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
             header {
                 padding: 6.5rem 10.2rem;
                 border-radius: 0.7rem 0.7rem 0 0;

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import "variables";
 
 *,
@@ -16,13 +23,17 @@ body {
     background: $lightGrayishBlue;
     padding: 0 22rem;
     min-height: 100vh;
+    display: -ms-grid;
     display: grid;
     place-content: center;
     main {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background: #fff;
         border-radius: 0.7rem;
-        box-shadow: 0.2rem 2rem 2rem hsla(214, 17%, 51%,.1);
+        -webkit-box-shadow: 0.2rem 2rem 2rem hsla(214, 17%, 51%,.1);
+                box-shadow: 0.2rem 2rem 2rem hsla(214, 17%, 51%,.1);
         header {
             padding: 8rem 9rem;
             background: url(../images/drawers.jpg);
@@ -40,8 +51,12 @@ body {
                 line-height: 1.5;
             }
             footer {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                align-items: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 gap: 1rem;
                 margin-top: 1rem;
                 div#avatar {
@@ -51,7 +66,9 @@ body {
                     }
                 }
                 div#namedate {
-                    flex: 3;
+                    -webkit-box-flex: 3;
+                        -ms-flex: 3;
+                            flex: 3;
                     h2 {
                         font-size: 0.8rem;
                     }
@@ -70,7 +87,8 @@ body {
                         text-transform: uppercase;
                         letter-spacing: 0.5em;
                         border-radius: 0.6em;
-                        box-shadow: 1em 1em 2em hsla(217, 19%, 35%, 0.3);
+                        -webkit-box-shadow: 1em 1em 2em hsla(217, 19%, 35%, 0.3);
+                                box-shadow: 1em 1em 2em hsla(217, 19%, 35%, 0.3);
                         display: none;
                         &::after {
                             content: " ";
@@ -83,8 +101,12 @@ body {
                             border-bottom: none;
                         }
                         div#flexmom {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
                             display: flex;
-                            align-items: center;
+                            -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
                             gap: 1em;
                             padding: 1.1em 3em;
                         }
@@ -96,11 +118,18 @@ body {
                         width: 2.1rem;
                         &:hover {
                             background: $desaturatedDarkBlue;
+                            -webkit-transition: background-color 1s ease;
+                            -o-transition: background-color 1s ease;
                             transition: background-color 1s ease;
                             cursor: pointer;
                             img#sharrow {
-                                filter: grayscale(1) brightness(3);
+                                -webkit-filter: grayscale(1) brightness(3);
+                                        filter: grayscale(1) brightness(3);
+                                -webkit-transition: -webkit-filter 1s ease;
+                                transition: -webkit-filter 1s ease;
+                                -o-transition: filter 1s ease;
                                 transition: filter 1s ease;
+                                transition: filter 1s ease, -webkit-filter 1s ease;
                             }
                         }
                         img#sharrow {
