@@ -73,7 +73,7 @@ body main section footer div#share div#pop {
   letter-spacing: 0.5em;
   border-radius: 0.6em;
   box-shadow: 1em 1em 2em hsla(217deg, 19%, 35%, 0.3);
-  display: block;
+  display: none;
 }
 body main section footer div#share div#pop::after {
   content: " ";
@@ -102,11 +102,11 @@ body main section footer div#share div#icon:hover {
   transition: background-color 1s ease;
   cursor: pointer;
 }
-body main section footer div#share div#icon:hover img {
+body main section footer div#share div#icon:hover img#sharrow {
   filter: grayscale(1) brightness(3);
   transition: filter 1s ease;
 }
-body main section footer div#share div#icon img {
+body main section footer div#share div#icon img#sharrow {
   width: 1rem;
 }
 body .attribution {

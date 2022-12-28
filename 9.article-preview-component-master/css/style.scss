@@ -71,7 +71,7 @@ body {
                         letter-spacing: 0.5em;
                         border-radius: 0.6em;
                         box-shadow: 1em 1em 2em hsla(217, 19%, 35%, 0.3);
-                        display: block;
+                        display: none;
                         &::after {
                             content: " ";
                             position: absolute;
@@ -98,12 +98,12 @@ body {
                             background: $desaturatedDarkBlue;
                             transition: background-color 1s ease;
                             cursor: pointer;
-                            img {
+                            img#sharrow {
                                 filter: grayscale(1) brightness(3);
                                 transition: filter 1s ease;
                             }
                         }
-                        img {
+                        img#sharrow {
                             width: 1rem;
                         }
                     }
