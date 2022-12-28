@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 *,
 *::before,
@@ -15,6 +21,7 @@ body {
   background: hsl(210deg, 46%, 95%);
   padding: 0 22rem;
   min-height: 100vh;
+  display: -ms-grid;
   display: grid;
   place-content: center;
 }
@@ -114,6 +121,12 @@ body .attribution {
   text-align: center;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 @media (max-width: 500px) {
   body {
     padding: 1.5rem;
