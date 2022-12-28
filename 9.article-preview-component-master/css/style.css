@@ -148,6 +148,8 @@ body .attribution {
   body main section footer {
     margin-top: 1.5rem;
   }
+}
+@media (max-width: 700px) {
   body main section footer div#share div#pop {
     bottom: -21px;
     right: -27px;
@@ -157,6 +159,7 @@ body .attribution {
     border: unset;
   }
   body main section footer div#share div#pop div#flexmom {
+    width: 87vw;
     padding: 1.6em 9.5em 1.8em 2.3em;
   }
   body main section footer div#share div#icon {

@@ -23,6 +23,17 @@
                 }
                 footer {
                     margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:700px) {
+    body {
+        main {
+            section {
+                footer {
                     div#share {
                         div#pop {
                             bottom: -21px;
@@ -32,6 +43,7 @@
                                 border: unset;
                             }
                             div#flexmom {
+                                width: 87vw;
                                 padding: 1.6em 9.5em 1.8em 2.3em;
                             }
                         }
